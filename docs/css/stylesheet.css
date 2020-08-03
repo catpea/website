@@ -1,0 +1,389 @@
+/* Generated August 3rd 2020, 5:57:11 pm EDT generator by Dr. Meow */
+
+:root {
+  --background: #10181e;
+  --text: #a2afb9;
+  --primary: #1095c1;
+  --primary-inverse: #fff;
+  --card-shadow: 0.5rem 0.5rem 2rem 0.2rem rgba(0, 0, 0, 1);
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+body > * {
+  box-sizing: border-box;
+  margin-bottom: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+}
+body > * article {
+  margin-bottom: 5rem;
+}
+body > * article header {
+  margin-bottom: 5rem;
+}
+html {
+  background-color: #10181e;
+  background-color: var(--background);
+  color: #a2afb9;
+  color: var(--text);
+  font-family: "Lato", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Staatliches", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.035em;
+}
+menu {
+  padding-left: 0;
+}
+ol {
+  padding-left: none;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+ul ul {
+  padding-left: 1rem;
+}
+li {
+  list-style: none;
+}
+img {
+  border-radius: 0.5rem;
+  box-shadow: 0.5rem 0.5rem 2rem 0.2rem rgba(0, 0, 0, 1);
+  box-shadow: var(--card-shadow);
+  height: auto;
+  margin-bottom: 2rem;
+  max-width: 100%;
+  width: 100%;
+}
+a {
+  color: #fff;
+  color: var(--primary-inverse);
+  text-decoration: none;
+}
+a[role="button"],
+button,
+input[type="submit"] {
+  background-color: #1095c1;
+  background-color: var(--primary);
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  color: #fff;
+  color: var(--primary-inverse);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5;
+  outline: none;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
+    box-shadow 0.2s ease-in-out;
+}
+hgroup {
+  margin-bottom: 2rem;
+}
+hgroup h1 {
+  margin-bottom: 0.2rem;
+  margin-top: 0.2rem;
+}
+hgroup h2 {
+  margin-bottom: 0.2rem;
+  margin-top: 0.2rem;
+}
+hgroup h3 {
+  margin-bottom: 0.2rem;
+  margin-top: 0.2rem;
+}
+hgroup h4 {
+  margin-bottom: 0.2rem;
+  margin-top: 0.2rem;
+}
+hgroup h5 {
+  margin-bottom: 0.2rem;
+  margin-top: 0.2rem;
+}
+hgroup h6 {
+  margin-bottom: 0.2rem;
+  margin-top: 0.2rem;
+}
+header > hgroup {
+  padding-bottom: 3rem;
+}
+header > nav > menu > li {
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+}
+footer > nav > menu > li {
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+}
+li > h2 {
+  padding-top: 2.5rem;
+}
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 1.9rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 1.3rem;
+}
+h5 {
+  font-size: 1.2rem;
+}
+h6 {
+  font-size: 1rem;
+}
+p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+@media (min-width: 576px) {
+  body > * {
+    margin-bottom: 5.83rem;
+    margin-top: 1.08rem;
+    max-width: 540px;
+  }
+  body > * article {
+    margin-bottom: 5.83rem;
+  }
+  body > * article header {
+    margin-bottom: 5.5rem;
+  }
+  li > h2 {
+    padding-top: 2.83rem;
+  }
+  h1 {
+    font-size: 2.83rem;
+  }
+  h2 {
+    font-size: 2.15rem;
+  }
+  h3 {
+    font-size: 1.78rem;
+  }
+  h4 {
+    font-size: 1.47rem;
+  }
+  h5 {
+    font-size: 1.33rem;
+  }
+  h6 {
+    font-size: 0.98rem;
+  }
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 2.5rem;
+  }
+}
+@media (min-width: 768px) {
+  body > * {
+    margin-bottom: 6.67rem;
+    margin-top: 1.17rem;
+    max-width: 720px;
+  }
+  body > * article {
+    margin-bottom: 6.67rem;
+  }
+  body > * article header {
+    margin-bottom: 6rem;
+  }
+  li > h2 {
+    padding-top: 3.17rem;
+  }
+  h1 {
+    font-size: 3.17rem;
+  }
+  h2 {
+    font-size: 2.4rem;
+  }
+  h3 {
+    font-size: 2.07rem;
+  }
+  h4 {
+    font-size: 1.63rem;
+  }
+  h5 {
+    font-size: 1.47rem;
+  }
+  h6 {
+    font-size: 0.97rem;
+  }
+  p {
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+  }
+}
+@media (min-width: 992px) {
+  body > * {
+    margin-bottom: 7.5rem;
+    margin-top: 1.25rem;
+    max-width: 960px;
+  }
+  body > * article {
+    margin-bottom: 7.5rem;
+  }
+  body > * article header {
+    margin-bottom: 6.5rem;
+  }
+  li > h2 {
+    padding-top: 3.5rem;
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+  h2 {
+    font-size: 2.65rem;
+  }
+  h3 {
+    font-size: 2.35rem;
+  }
+  h4 {
+    font-size: 1.8rem;
+  }
+  h5 {
+    font-size: 1.6rem;
+  }
+  h6 {
+    font-size: 0.95rem;
+  }
+  p {
+    font-size: 1.4rem;
+    margin-bottom: 3.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  body > * {
+    margin-bottom: 8.33rem;
+    margin-top: 1.33rem;
+    max-width: 1140px;
+  }
+  body > * article {
+    margin-bottom: 8.33rem;
+  }
+  body > * article header {
+    margin-bottom: 7rem;
+  }
+  li > h2 {
+    padding-top: 3.83rem;
+  }
+  h1 {
+    font-size: 3.83rem;
+  }
+  h2 {
+    font-size: 2.9rem;
+  }
+  h3 {
+    font-size: 2.63rem;
+  }
+  h4 {
+    font-size: 1.97rem;
+  }
+  h5 {
+    font-size: 1.73rem;
+  }
+  h6 {
+    font-size: 0.93rem;
+  }
+  p {
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+  }
+}
+@media (min-width: 1400px) {
+  body > * {
+    margin-bottom: 9.17rem;
+    margin-top: 1.42rem;
+    max-width: 1320px;
+  }
+  body > * article {
+    margin-bottom: 9.17rem;
+  }
+  body > * article header {
+    margin-bottom: 7.5rem;
+  }
+  li > h2 {
+    padding-top: 4.17rem;
+  }
+  h1 {
+    font-size: 4.17rem;
+  }
+  h2 {
+    font-size: 3.15rem;
+  }
+  h3 {
+    font-size: 2.92rem;
+  }
+  h4 {
+    font-size: 2.13rem;
+  }
+  h5 {
+    font-size: 1.87rem;
+  }
+  h6 {
+    font-size: 0.92rem;
+  }
+  p {
+    font-size: 1.6rem;
+    margin-bottom: 4.5rem;
+  }
+}
+@media (min-width: 1600px) {
+  body > * {
+    margin-bottom: 10rem;
+    margin-top: 1.5rem;
+    max-width: 1400px;
+  }
+  body > * article {
+    margin-bottom: 10rem;
+  }
+  body > * article header {
+    margin-bottom: 8rem;
+  }
+  li > h2 {
+    padding-top: 4.5rem;
+  }
+  h1 {
+    font-size: 4.5rem;
+  }
+  h2 {
+    font-size: 3.4rem;
+  }
+  h3 {
+    font-size: 3.2rem;
+  }
+  h4 {
+    font-size: 2.3rem;
+  }
+  h5 {
+    font-size: 2rem;
+  }
+  h6 {
+    font-size: 0.9rem;
+  }
+  p {
+    font-size: 1.7rem;
+    margin-bottom: 5rem;
+  }
+}
+
