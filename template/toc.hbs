@@ -5,12 +5,15 @@
   </head>
   <body>
     {{>header}}
-
+    {{>nav}}
     <main>
-      <ul>
-        {{#each data.data}}
-        <li>
-
+      <article>
+        <header>
+          <h1>Table of Contents</h1>
+          <h5>In Chronological Order</h5>
+        </header>
+        {{#each chapter.data}}
+        <section>
           <h2>Chapter {{meta.sectionNumber}}</h2>
           <ul>
             {{#each data}}
@@ -18,21 +21,14 @@
               <hgroup>
                 <h3><a href="{{meta.id}}.html">{{meta.title}}</a></h3>
                 <h6>Written {{meta.timestamp}}</h6>
-                <!-- {{#each meta.sounds}}
-                  <div><a href="{{path}}/{{file}}" rel="noopener noreferrer" target="_blank" class="no-print">{{label}}</a></div>
-                {{/each}} -->
               </hgroup>
-
             </li>
             {{/each}}
           </ul>
-
-        </li>
+        </section>
         {{/each}}
-      </ul>
-
+      </article>
     </main>
-
     {{>footer}}
   </body>
 </html>

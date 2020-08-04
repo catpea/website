@@ -5,35 +5,30 @@
   </head>
   <body>
     {{>header}}
-
-
+    {{>nav}}
     <main>
-
-      <ul>
-        {{#each (reverse data.data)}}
-        <li>
-
+      <article>
+        <header>
+          <h1>Home Page Contents</h1>
+          <h5>Most Recent First</h5>
+        </header>
+        {{#each (reverse chapter.data)}}
+        <section>
           <h2>Chapter {{meta.sectionNumber}}</h2>
           <ul>
-
-
             {{#each (reverse data)}}
             <li>
               <hgroup>
                 <h3><a href="{{meta.id}}.html">{{meta.title}}</a></h3>
                 <h6>Written {{meta.timestamp}}</h6>
               </hgroup>
-
             </li>
             {{/each}}
           </ul>
-
-        </li>
+        </section>
         {{/each}}
-      </ul>
-
+      </article>
     </main>
-
     {{>footer}}
   </body>
 </html>

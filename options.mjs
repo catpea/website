@@ -1,14 +1,23 @@
 const options = {
-  version: '2.0',
 
-  title: 'Poetry',
-  author: 'Dr. Meow',
+  variables:{
 
-  source: 'https://github.com/catpea/poetry',
-  website: 'http://catpea.com',
+    title: 'Purrniciously Furmidable',
+    subtitle: 'Anthology of Inspirational Rhyme',
+    author: 'Dr. M, Ph.D.',
+    email: 'corporate.miou@gmail.com',
+    version: '2.0.1',
+
+    cname: 'catpea.com',  // for use in CNAME file
+    website: 'https://catpea.com',  // for use in links
+    canonical: 'https://catpea.com/', // for use in html header
+
+    sourcecode: 'https://github.com/catpea/poetry',
+
+  },
+
 
   sourceDatabase: {
-
     audio: './.src/dist/audio',
     image: './.src/dist/image',
   },
@@ -17,8 +26,6 @@ const options = {
   distributionDirectory: {
     path: './dist',
   },
-
-
 
   dataFeed: {
     file: 'feed.json',
@@ -29,43 +36,45 @@ const options = {
   // Configuration for the poetry book generation
   website: {
 
-    canonical: 'https://catpea.com/',
-    directory: 'docs',
-    partials: 'partials',
 
-    stylesheet: 'css/stylesheet.css',
-    styleguide: 'styleguide.html',
+    directory: 'docs', // directory
+    partials: 'partials', // directory
 
-    index: 'index.html',
-    news: 'news.html',
-    toc: 'toc.html',
-    poems: 'poems.html',
+    stylesheet: 'css/stylesheet.css', // filename
+    styleguide: 'styleguide.html', // filename
 
-    changelog: 'changelog.html',
+    index: 'index.html', // filename
+    news: 'news.html', // filename
+    toc: 'toc.html', // filename
+    poems: 'poems.html', // filename
 
-    sectionFileName:'section-{{id}}.html',
-    sectionName:'section-{{id}}',
+    changelog: 'changelog.html', // filename
+
+    cname:'CNAME', // filename
+
+    sectionFileName:'section-{{id}}.html', // hbs template
+    sectionName:'section-{{id}}', // hbs template
 
     template: {
-      files: 'template/main/files',
-      path: 'template/main',
+      files: 'template/files', // directory
+      path: 'template', // directory
 
-      page: 'page.hbs',
-      index: 'index.hbs',
-      news: 'news.hbs',
-      toc: 'toc.hbs',
-      poems: 'poems.hbs',
-      poem: 'poem.hbs',
-      print: 'print.hbs',
+      page: 'page.hbs', // filename
+      index: 'index.hbs', // filename
+      news: 'news.hbs', // filename
+      toc: 'toc.hbs', // filename
+      poems: 'poems.hbs', // filename
+      poem: 'poem.hbs', // filename
+      print: 'print.hbs', // filename
 
-      stylesheet: 'stylesheet.hbs',
-      styleguide: 'styleguide.hbs',
-      changelog: 'changelog.hbs',
+      stylesheet: 'stylesheet.hbs', // filename
+      styleguide: 'styleguide.hbs', // filename
+      changelog: 'changelog.hbs', // filename
     },
 
     css: {
-      path: 'template/main',
-      main: 'stylesheet.mjs',
+      path: 'template', // directory
+      main: 'stylesheet.mjs', // filename
     }
 
   },
