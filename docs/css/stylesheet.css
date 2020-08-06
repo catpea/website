@@ -47,6 +47,10 @@ h5 {
 menu {
   padding-left: 0;
 }
+small {
+  color: #1095c1;
+  color: var(--primary);
+}
 ol {
   padding-left: none;
 }
@@ -54,7 +58,7 @@ ul {
   list-style: none;
   padding-left: 0;
 }
-ul ul {
+ul li {
   padding-left: 1rem;
 }
 li {

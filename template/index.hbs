@@ -19,7 +19,7 @@
             {{#each (reverse data)}}
             <li>
               <hgroup>
-                <h3><a href="{{meta.id}}.html">{{meta.title}}</a></h3>
+                <h3><a name="{{meta.id}}" href="{{meta.id}}.html">{{meta.title}}</a></h3>
                 <h6>Written {{meta.timestamp}}</h6>
               </hgroup>
             </li>

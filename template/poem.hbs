@@ -22,11 +22,35 @@
       </article>
     </main>
 
+
     <footer class="no-print">
         <nav>
           <menu>
-            <li><a href="index.html">Home Page</a></li>
-            <li><a href="toc.html">Table of Contents</a></li>
+
+            {{#if meta.isOldest}}
+            <li><small>Note: You are reading the oldest poem.</small></li>
+            {{/if}}
+            {{#if meta.isNewest}}
+            <li><small>Note: You are reading the most recent poem.</small></li>
+            {{/if}}
+
+
+            {{#unless meta.isOldest}}
+            <li><a href="{{meta.olderId}}.html">Go To Older Poem</a></li>
+            {{/unless}}
+            {{#if meta.isOldest}}
+            <li><a href="{{meta.newestId}}.html">Jump To Newest Poem</a></li>
+            {{/if}}
+
+            {{#unless meta.isNewest}}
+            <li><a href="{{meta.newerId}}.html">Go To Newer Poem</a></li>
+            {{/unless}}
+            {{#if meta.isNewest}}
+            <li><a href="{{meta.oldestId}}.html">Jump To Oldest Poem</a></li>
+            {{/if}}
+
+            <li><a href="index.html#{{meta.id}}">Home Page</a></li>
+            <li><a href="toc.html#{{meta.id}}">Table of Contents</a></li>
           </menu>
         </nav>
     </footer>

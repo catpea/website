@@ -43,11 +43,18 @@ const options = {
 
    menu: { paddingLeft: 0},
 
+   small:{
+     color: 'var(--primary)'
+   },
+
    ol: { paddingLeft: 'none',},
    ul: { paddingLeft: 0, listStyle: 'none'},
-   'ul ul': {
+   'ul li': {
      paddingLeft: '1rem',
    },
+   // 'ul ul': {
+   //   paddingLeft: '1rem',
+   // },
    li: { listStyle: 'none',},
 
 
