@@ -24,16 +24,9 @@
 
 
     <footer class="no-print">
+
         <nav>
           <menu>
-
-            {{#if meta.isOldest}}
-            <li><small>Note: You are reading the oldest poem.</small></li>
-            {{/if}}
-            {{#if meta.isNewest}}
-            <li><small>Note: You are reading the most recent poem.</small></li>
-            {{/if}}
-
 
             {{#unless meta.isOldest}}
             <li><a href="{{meta.olderId}}.html">Go To Older Poem</a></li>
@@ -53,6 +46,16 @@
             <li><a href="toc.html#{{meta.id}}">Table of Contents</a></li>
           </menu>
         </nav>
+
+        <section>
+          {{#if meta.isOldest}}
+          <p><small>Note: You are reading the oldest poem.</small></p>
+          {{/if}}
+          {{#if meta.isNewest}}
+          <p><small>Note: You are reading the most recent poem.</small></p>
+          {{/if}}
+        </section>
+
     </footer>
 
 

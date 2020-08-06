@@ -6,11 +6,14 @@ const options = {
 
   styles:{
     ':root': {
-     '--background':`#10181e`,
+     '--background':`#002b36`,
+     '--headings':`#f74562`,
+     '--button':`#f74562`,
+     '--button-text':`#000000`,
      '--text':`#a2afb9`,
      '--primary':`#1095c1`,
-     '--primary-inverse':`#FFF`,
-     '--card-shadow':` 0.5rem 0.5rem 2rem .2rem rgba(0, 0, 0, 1)`,
+     '--primary-inverse':`#92ecb9`,
+     '--card-shadow':`0 1px 1px rgba(0,0,0,0.11),0 2px 2px rgba(0,0,0,0.11),0 4px 4px rgba(0,0,0,0.11),0 8px 8px rgba(0,0,0,0.11),0 16px 16px rgba(0,0,0,0.11),0 32px 32px rgba(0,0,0,0.11);`,
    },
 
 
@@ -39,6 +42,8 @@ const options = {
      fontFamily: "'Staatliches', sans-serif;",
      fontWeight: '700',
      letterSpacing: '0.035em',
+     textShadow: '0.035em 0.035em 0.065em black',
+     color: 'var(--headings)',
    },
 
    menu: { paddingLeft: 0},
@@ -84,8 +89,8 @@ const options = {
       padding: '0.75rem 1rem',
       borderRadius: '0.25rem',
       outline: 'none',
-      backgroundColor: 'var(--primary)',
-      color: 'var(--primary-inverse)',
+      backgroundColor: 'var(--button)',
+      color: 'var(--button-text)',
       fontSize: '1rem',
       fontWeight: 'normal',
       lineHeight: '1.5',
@@ -94,39 +99,39 @@ const options = {
       transition: 'background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out',
       textDecoration: 'none',
       display: 'inline-block',
+      boxShadow: 'var(--card-shadow)',
     },
 
     hgroup:{
       marginBottom: '2rem',
       h1:{
-        marginTop: '0.2rem',
-        marginBottom: '0.2rem',
+        marginTop: '0.2rem', // in an h roup margins are seset
+        marginBottom: '0.2rem', // in an h roup margins are seset
       },
       h2:{
-        marginTop: '0.2rem',
-        marginBottom: '0.2rem',
+        marginTop: '0.2rem', // in an h roup margins are seset
+        marginBottom: '0.2rem', // in an h roup margins are seset
       },
       h3:{
-        marginTop: '0.2rem',
-        marginBottom: '0.2rem',
+        marginTop: '0.2rem', // in an h roup margins are seset
+        marginBottom: '0.2rem', // in an h roup margins are seset
       },
       h4:{
-        marginTop: '0.2rem',
-        marginBottom: '0.2rem',
+        marginTop: '0.2rem', // in an h roup margins are seset
+        marginBottom: '0.2rem', // in an h roup margins are seset
       },
       h5:{
-        marginTop: '0.2rem',
-        marginBottom: '0.2rem',
+        marginTop: '0.2rem', // in an h roup margins are seset
+        marginBottom: '0.2rem', // in an h roup margins are seset
       },
       h6:{
-        marginTop: '0.2rem',
-        marginBottom: '0.2rem',
+        marginTop: '0.2rem', // in an h roup margins are seset
+        marginBottom: '0.2rem', // in an h roup margins are seset
       },
     },
 
-    'header > hgroup': {paddingBottom: '3rem'},
-    'header > nav > menu > li': { fontSize: '1.1rem', marginBottom: '1.2rem' },
-    'footer > nav > menu > li': { fontSize: '1.1rem', marginBottom: '1.2rem' },
+
+
 
   },
 
@@ -135,12 +140,26 @@ const options = {
 
     {path: ['li > h2'], property:[{name:'paddingTop', from:2.5, to:4.5, unit:'rem'}] }, // top padding for h2 tags within a list
 
-    {path: ['h1'], property:[{name:'fontSize', from:2.5, to:4.5, unit:'rem'}] },
-    {path: ['h2'], property:[{name:'fontSize', from:1.9, to:3.4, unit:'rem'}] },
-    {path: ['h3'], property:[{name:'fontSize', from:1.5, to:3.2, unit:'rem'}] },
-    {path: ['h4'], property:[{name:'fontSize', from:1.3, to:2.3, unit:'rem'}] },
-    {path: ['h5'], property:[{name:'fontSize', from:1.2, to:2.0, unit:'rem'}] },
-    {path: ['h6'], property:[{name:'fontSize', from:1.0, to:0.9, unit:'rem'}] },
+    {path: ['img'], property:[{name:'width', from:100, to:50, unit:'%'}] },
+
+    {path: ['h1'], property:[{name:'fontSize', from:2.5, to:5.5, unit:'rem'}, {name:'marginBottom', from:1.5, to:2.5, unit:'rem'}] },
+    {path: ['h2'], property:[{name:'fontSize', from:1.9, to:3.4, unit:'rem'}, {name:'marginBottom', from:1.4, to:2.4, unit:'rem'}] },
+    {path: ['h3'], property:[{name:'fontSize', from:1.5, to:3.2, unit:'rem'}, {name:'marginBottom', from:1.3, to:2.3, unit:'rem'}] },
+    {path: ['h4'], property:[{name:'fontSize', from:1.3, to:2.7, unit:'rem'}, {name:'marginBottom', from:1.2, to:2.2, unit:'rem'}] },
+    {path: ['h5'], property:[{name:'fontSize', from:1.2, to:2.5, unit:'rem'}, {name:'marginBottom', from:1.1, to:2.1, unit:'rem'}] },
+    {path: ['h6'], property:[{name:'fontSize', from:1.0, to:1.2, unit:'rem'}, {name:'marginBottom', from:1.0, to:2.0, unit:'rem'}] },
+
+    {path: ['hgroup'], property:[{name:'marginBottom', from:2.5, to:3.5, unit:'rem'}] },
+    {path: ['hgroup'], property:[{name:'marginBottom', from:2.4, to:3.4, unit:'rem'}] },
+    {path: ['hgroup'], property:[{name:'marginBottom', from:2.3, to:3.3, unit:'rem'}] },
+    {path: ['hgroup'], property:[{name:'marginBottom', from:2.2, to:3.2, unit:'rem'}] },
+    {path: ['hgroup'], property:[{name:'marginBottom', from:2.1, to:3.1, unit:'rem'}] },
+    {path: ['hgroup'], property:[{name:'marginBottom', from:2.0, to:3.0, unit:'rem'}] },
+
+    {path: ['menu > li'], property:[
+      {name:'fontSize', from:1.0, to:1.7, unit:'rem'},
+      {name:'marginBottom', from:1.3, to:2.0, unit:'rem'}
+    ] },
 
     {path: ['p'], property:[
       {name:'marginBottom', from:2, to:5, unit:'rem'},

@@ -31,6 +31,10 @@ const options = {
     file: 'feed.json',
     directory: './.src/dist/feed',
   },
+  newsFeed: {
+    file: 'news.txt',
+    directory: './',
+  },
 
 
   // Configuration for the poetry book generation
