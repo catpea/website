@@ -8,15 +8,18 @@
     {{>nav}}
     <main>
 
+      <article>
       <header>
         <hgroup>
           <h3>Updates and Notes</h3>
           <h5>News Related to {{title}}</h5>
         </hgroup>
       </header>
+      </article>
 
       {{#each news}}
         <article>
+          <section>
           <hgroup>
             <h3>{{title}}</h3>
             <h6>{{date}}</h6>
@@ -24,6 +27,7 @@
           <p>
             {{text}}
           </p>
+          <section>
         </article>
       {{/each}}
 

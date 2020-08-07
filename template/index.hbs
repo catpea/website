@@ -7,14 +7,13 @@
     {{>header}}
     {{>nav}}
     <main>
-      <a name="top"></a>
       <article>
-        <header>
+        <!-- <header>
           <hgroup>
             <h3>Home Page Contents</h3>
             <h5>Showing Most Recent Entries First</h5>
           </hgroup>
-        </header>
+        </header> -->
         {{#each (reverse chapter.data)}}
         <section>
           {{#isAbove @index 1}}<a href="#top" style="float: right;"><small>top</small></a>{{/isAbove}}

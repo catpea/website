@@ -1,17 +1,17 @@
 <nav class="no-print">
   <header>
-    <h2>Navigation</h2>
+    <h2>Website Navigation</h2>
   </header>
 
   <menu>
    <!-- <li><a href="audio/all.mp3">Recent Audio Poems</a></li> -->
-   <li><a href="index.html">Home Page</a></li>
-   <li><a href="toc.html">Table of Contents</a></li>
-   <li><a href="https://www.youtube.com/watch?v=hlNlin5hCEU" rel="noopener noreferrer" target="_blank">YouTube Audio Book</a></li>
+   {{#unless (matches filename 'index.html')}}<li><a href="index.html">List Newest Poems First</a></li>{{/unless}}
+   {{#unless (matches filename 'toc.html')}}<li><a href="toc.html">List Poems In Chronological Order</a></li>{{/unless}}
+   <li><a href="https://www.youtube.com/playlist?list=PLOo-pqnffyOqsK6hf5tFwMqzvhogksrgW" rel="noopener noreferrer" target="_blank">Visit YouTube Audio Book</a></li>
    <!-- <li><a href="poems.html">Poems</a></li> -->
    <!-- <li><a href="Illustrations.html">Wall of Illustrations</a></li> -->
    <!-- <li><a href="audio/all.mp3" rel="noopener noreferrer" target="_blank" class="no-print">Latest Audio Book</a></li> -->
-   <li><a href="news.html">Updates and Notes</a></li>
+   <li><a href="news.html">Recent Updates and Notes</a></li>
   </menu>
 
 </nav>

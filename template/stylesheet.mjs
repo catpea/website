@@ -6,12 +6,17 @@ const options = {
 
   styles:{
     ':root': {
+      '--primary':`#1095c1`,
+      '--secondary':`#033744`,
+
+
      '--background':`#002b36`,
+
      '--headings':`#f74562`,
      '--button':`#f74562`,
      '--button-text':`#000000`,
      '--text':`#a2afb9`,
-     '--primary':`#1095c1`,
+
      '--primary-inverse':`#92ecb9`,
      '--card-shadow':`0 1px 1px rgba(0,0,0,0.11),0 2px 2px rgba(0,0,0,0.11),0 4px 4px rgba(0,0,0,0.11),0 8px 8px rgba(0,0,0,0.11),0 16px 16px rgba(0,0,0,0.11),0 32px 32px rgba(0,0,0,0.11);`,
    },
@@ -21,7 +26,7 @@ const options = {
      boxSizing: 'border-box',
    },
    'body > *':{
-     width: '100%',
+     width: '95%',
      paddingRight: '15px',
      paddingLeft: '15px',
      marginRight: 'auto',
@@ -35,11 +40,13 @@ const options = {
       backgroundColor: 'var(--background)',
       fontFamily: "'Lato', sans-serif",
 
+
     },
 
   // NOTE:  The primary font is applied in the headings declaration
    'h1, h2, h3, h4, h5': {
      fontFamily: "'Staatliches', sans-serif;",
+
      fontWeight: '700',
      letterSpacing: '0.035em',
      textShadow: '0.035em 0.035em 0.065em black',
@@ -131,6 +138,18 @@ const options = {
     },
 
 
+    'body > main > article > header, body > main > article > section':{
+        backgroundColor: 'var(--secondary)',
+        borderRadius: '1rem',
+        boxShadow: 'var(--card-shadow)',
+    },
+
+    'body > header, body > nav, body > footer': {
+        backgroundColor: 'var(--secondary)',
+        borderRadius: '1rem',
+        boxShadow: 'var(--card-shadow)',
+    }
+
 
 
   },
@@ -178,6 +197,20 @@ const options = {
     {path: ['body > *', 'article header'], property:[
       {name:'marginBottom', from:5, to:8, unit:'rem'}
     ]},
+
+
+    // Deals with primary subsections, top and bottom of the page.
+    {path: ['body > header, body > nav, body > footer'], property:[
+      {name:'marginBottom', from:2, to:4, unit:'rem'},
+      {name:'padding', from:2, to:4, unit:'rem'},
+    ]},
+
+    // Deals with primary subsections, top and bottom of the page.
+    {path: ['body > main > article > header, body > main > article > section'], property:[
+      {name:'marginBottom', from:2, to:4, unit:'rem'},
+      {name:'padding', from:2, to:4, unit:'rem'},
+    ]},
+
 
   ]
 
