@@ -1,6 +1,7 @@
 # files starting with hash/pound are ignored, blank lines are ignored.
 # date is in (new Date()).toISOString() format
 
+2020-08-07T21:48:14.475Z | Raised Borders | The User Interface felt empty without a raised border/background motif.
 2020-08-06T20:43:20.118Z | News System | Added news.txt for easy book update reporting.
 2020-08-05T19:26:42.114Z | System Upgrades | Enhanced the navigation, added more tooling, expanded data feed, and fixed up meta titles.
 2020-08-05T14:57:42.342Z | Just Launched | catpea.com is up and running in a much less experimental and a lot more low-power-device-friendly mode.
