@@ -110,22 +110,22 @@ const options = {
     },
 
     h1:{
-      color: '#264653',
+      color: '#f74562',
     },
     h2:{
-      color: '#2a9d8f',
+      color: '#df566c', //#2da495',
     },
     h3:{
       color: '#e9c46a',
     },
     h4:{
-      color: '#f4a261',
-    },
-    h5:{
       color: '#e76f51',
     },
+    h5:{
+      color: '#d09261',
+    },
     h6:{
-      color: '#ff5b5b',
+      color: '#5280a1',
     },
 
     hgroup:{
