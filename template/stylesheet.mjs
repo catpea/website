@@ -109,6 +109,25 @@ const options = {
       boxShadow: 'var(--card-shadow)',
     },
 
+    h1:{
+      color: '#264653',
+    },
+    h2:{
+      color: '#2a9d8f',
+    },
+    h3:{
+      color: '#e9c46a',
+    },
+    h4:{
+      color: '#f4a261',
+    },
+    h5:{
+      color: '#e76f51',
+    },
+    h6:{
+      color: '#ff5b5b',
+    },
+
     hgroup:{
       marginBottom: '2rem',
       h1:{
