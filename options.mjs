@@ -2,9 +2,9 @@ const options = {
 
   variables:{
 
-    title: 'Purrniciously Furmidable',
+    title: 'Furkies Purrkies',
     subtitle: 'Anthology of Inspirational Rhyme',
-    author: 'Dr. M, Ph.D.',
+    author: 'Dr. Meow, Ph.D.',
     email: 'corporate.miou@gmail.com',
     version: '2.0.1',
 
