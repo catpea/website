@@ -177,7 +177,7 @@ const options = {
 
     {path: ['img'], property:[{name:'width', from:100, to:50, unit:'%'}] },
 
-    {path: ['h1'], property:[{name:'fontSize', from:3.5, to:5.5, unit:'rem'}, {name:'marginBottom', from:1.5, to:2.5, unit:'rem'}] },
+    {path: ['h1'], property:[{name:'fontSize', from:4.0, to:6.0, unit:'rem'}, {name:'marginBottom', from:1.5, to:2.5, unit:'rem'}] },
     {path: ['h2'], property:[{name:'fontSize', from:2.5, to:3.4, unit:'rem'}, {name:'marginBottom', from:1.4, to:2.4, unit:'rem'}] },
     {path: ['h3'], property:[{name:'fontSize', from:1.5, to:3.2, unit:'rem'}, {name:'marginBottom', from:1.3, to:2.3, unit:'rem'}] },
     {path: ['h4'], property:[{name:'fontSize', from:1.3, to:2.7, unit:'rem'}, {name:'marginBottom', from:1.2, to:2.2, unit:'rem'}] },
