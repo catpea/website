@@ -2,7 +2,8 @@ const options = {
   fibonacci:   [   5,   8,  13,   21,   34,   55],
   designations:['sm','md','lg', 'xl','xxl','xxxl'],
   breakpoints: [576,  768, 992, 1200, 1400, 1600],
-  container:   [540,  720, 960, 1140, 1320, 1400, 'px'],
+  //container:   [540,  720, 960, 1140, 1320, 1400, 'px'],
+  container:   [540,  720, 960, 1140, 1140, 1140, 'px'],
 
   styles:{
     ':root': {
@@ -176,8 +177,8 @@ const options = {
 
     {path: ['img'], property:[{name:'width', from:100, to:50, unit:'%'}] },
 
-    {path: ['h1'], property:[{name:'fontSize', from:2.5, to:5.5, unit:'rem'}, {name:'marginBottom', from:1.5, to:2.5, unit:'rem'}] },
-    {path: ['h2'], property:[{name:'fontSize', from:1.9, to:3.4, unit:'rem'}, {name:'marginBottom', from:1.4, to:2.4, unit:'rem'}] },
+    {path: ['h1'], property:[{name:'fontSize', from:3.5, to:5.5, unit:'rem'}, {name:'marginBottom', from:1.5, to:2.5, unit:'rem'}] },
+    {path: ['h2'], property:[{name:'fontSize', from:2.5, to:3.4, unit:'rem'}, {name:'marginBottom', from:1.4, to:2.4, unit:'rem'}] },
     {path: ['h3'], property:[{name:'fontSize', from:1.5, to:3.2, unit:'rem'}, {name:'marginBottom', from:1.3, to:2.3, unit:'rem'}] },
     {path: ['h4'], property:[{name:'fontSize', from:1.3, to:2.7, unit:'rem'}, {name:'marginBottom', from:1.2, to:2.2, unit:'rem'}] },
     {path: ['h5'], property:[{name:'fontSize', from:1.2, to:2.5, unit:'rem'}, {name:'marginBottom', from:1.1, to:2.1, unit:'rem'}] },

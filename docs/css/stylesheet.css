@@ -116,12 +116,12 @@ input[type="submit"] {
 }
 h1 {
   color: #f74562;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   margin-bottom: 1.5rem;
 }
 h2 {
   color: #df566c;
-  font-size: 1.9rem;
+  font-size: 2.5rem;
   margin-bottom: 1.4rem;
 }
 h3 {
@@ -226,11 +226,11 @@ p {
     width: 91.67%;
   }
   h1 {
-    font-size: 3rem;
+    font-size: 3.83rem;
     margin-bottom: 1.67rem;
   }
   h2 {
-    font-size: 2.15rem;
+    font-size: 2.65rem;
     margin-bottom: 1.57rem;
   }
   h3 {
@@ -291,11 +291,11 @@ p {
     width: 83.33%;
   }
   h1 {
-    font-size: 3.5rem;
+    font-size: 4.17rem;
     margin-bottom: 1.83rem;
   }
   h2 {
-    font-size: 2.4rem;
+    font-size: 2.8rem;
     margin-bottom: 1.73rem;
   }
   h3 {
@@ -356,11 +356,11 @@ p {
     width: 75%;
   }
   h1 {
-    font-size: 4rem;
+    font-size: 4.5rem;
     margin-bottom: 2rem;
   }
   h2 {
-    font-size: 2.65rem;
+    font-size: 2.95rem;
     margin-bottom: 1.9rem;
   }
   h3 {
@@ -421,11 +421,11 @@ p {
     width: 66.67%;
   }
   h1 {
-    font-size: 4.5rem;
+    font-size: 4.83rem;
     margin-bottom: 2.17rem;
   }
   h2 {
-    font-size: 2.9rem;
+    font-size: 3.1rem;
     margin-bottom: 2.07rem;
   }
   h3 {
@@ -471,7 +471,7 @@ p {
   body > * {
     margin-bottom: 9.17rem;
     margin-top: 1.42rem;
-    max-width: 1320px;
+    max-width: 1140px;
   }
   body > * article {
     margin-bottom: 9.17rem;
@@ -486,11 +486,11 @@ p {
     width: 58.33%;
   }
   h1 {
-    font-size: 5rem;
+    font-size: 5.17rem;
     margin-bottom: 2.33rem;
   }
   h2 {
-    font-size: 3.15rem;
+    font-size: 3.25rem;
     margin-bottom: 2.23rem;
   }
   h3 {
@@ -536,7 +536,7 @@ p {
   body > * {
     margin-bottom: 10rem;
     margin-top: 1.5rem;
-    max-width: 1400px;
+    max-width: 1140px;
   }
   body > * article {
     margin-bottom: 10rem;
