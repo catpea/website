@@ -218,13 +218,13 @@ const options = {
     // Deals with primary subsections, top and bottom of the page.
     {path: ['body > header, body > nav, body > footer'], property:[
       {name:'marginBottom', from:2, to:4, unit:'rem'},
-      {name:'padding', from:2, to:4, unit:'rem'},
+      {name:'padding', from:1, to:2, unit:'rem'},
     ]},
 
     // Deals with primary subsections, top and bottom of the page.
     {path: ['body > main > article > header, body > main > article > section'], property:[
       {name:'marginBottom', from:2, to:4, unit:'rem'},
-      {name:'padding', from:2, to:4, unit:'rem'},
+      {name:'padding', from:1, to:2, unit:'rem'},
     ]},
 
 

@@ -181,7 +181,7 @@ body > main > article > section {
     0 16px 16px rgba(0, 0, 0, 0.11), 0 32px 32px rgba(0, 0, 0, 0.11);
   box-shadow: var(--card-shadow);
   margin-bottom: 2rem;
-  padding: 2rem;
+  padding: 1rem;
 }
 body > header,
 body > nav,
@@ -194,7 +194,7 @@ body > footer {
     0 16px 16px rgba(0, 0, 0, 0.11), 0 32px 32px rgba(0, 0, 0, 0.11);
   box-shadow: var(--card-shadow);
   margin-bottom: 2rem;
-  padding: 2rem;
+  padding: 1rem;
 }
 li > h2 {
   padding-top: 2.5rem;
@@ -264,12 +264,12 @@ p {
   body > nav,
   body > footer {
     margin-bottom: 2.33rem;
-    padding: 2.33rem;
+    padding: 1.17rem;
   }
   body > main > article > header,
   body > main > article > section {
     margin-bottom: 2.33rem;
-    padding: 2.33rem;
+    padding: 1.17rem;
   }
 }
 @media (min-width: 768px) {
@@ -329,12 +329,12 @@ p {
   body > nav,
   body > footer {
     margin-bottom: 2.67rem;
-    padding: 2.67rem;
+    padding: 1.33rem;
   }
   body > main > article > header,
   body > main > article > section {
     margin-bottom: 2.67rem;
-    padding: 2.67rem;
+    padding: 1.33rem;
   }
 }
 @media (min-width: 992px) {
@@ -394,12 +394,12 @@ p {
   body > nav,
   body > footer {
     margin-bottom: 3rem;
-    padding: 3rem;
+    padding: 1.5rem;
   }
   body > main > article > header,
   body > main > article > section {
     margin-bottom: 3rem;
-    padding: 3rem;
+    padding: 1.5rem;
   }
 }
 @media (min-width: 1200px) {
@@ -459,12 +459,12 @@ p {
   body > nav,
   body > footer {
     margin-bottom: 3.33rem;
-    padding: 3.33rem;
+    padding: 1.67rem;
   }
   body > main > article > header,
   body > main > article > section {
     margin-bottom: 3.33rem;
-    padding: 3.33rem;
+    padding: 1.67rem;
   }
 }
 @media (min-width: 1400px) {
@@ -524,12 +524,12 @@ p {
   body > nav,
   body > footer {
     margin-bottom: 3.67rem;
-    padding: 3.67rem;
+    padding: 1.83rem;
   }
   body > main > article > header,
   body > main > article > section {
     margin-bottom: 3.67rem;
-    padding: 3.67rem;
+    padding: 1.83rem;
   }
 }
 @media (min-width: 1600px) {
@@ -589,12 +589,12 @@ p {
   body > nav,
   body > footer {
     margin-bottom: 4rem;
-    padding: 4rem;
+    padding: 2rem;
   }
   body > main > article > header,
   body > main > article > section {
     margin-bottom: 4rem;
-    padding: 4rem;
+    padding: 2rem;
   }
 }
 
