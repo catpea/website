@@ -126,12 +126,12 @@ h2 {
 }
 h3 {
   color: #e9c46a;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-bottom: 1.3rem;
 }
 h4 {
   color: #e76f51;
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   margin-bottom: 1.2rem;
 }
 h5 {
@@ -141,7 +141,7 @@ h5 {
 }
 h6 {
   color: #5280a1;
-  font-size: 1rem;
+  font-size: 0.9rem;
   margin-bottom: 1rem;
 }
 hgroup {
@@ -223,7 +223,7 @@ p {
     padding-top: 2.83rem;
   }
   img {
-    width: 91.67%;
+    width: 95.83%;
   }
   h1 {
     font-size: 4.17rem;
@@ -234,11 +234,11 @@ p {
     margin-bottom: 1.57rem;
   }
   h3 {
-    font-size: 1.67rem;
+    font-size: 1.5rem;
     margin-bottom: 1.47rem;
   }
   h4 {
-    font-size: 1.47rem;
+    font-size: 1.43rem;
     margin-bottom: 1.37rem;
   }
   h5 {
@@ -246,7 +246,7 @@ p {
     margin-bottom: 1.27rem;
   }
   h6 {
-    font-size: 1.02rem;
+    font-size: 0.93rem;
     margin-bottom: 1.17rem;
   }
   hgroup {
@@ -288,7 +288,7 @@ p {
     padding-top: 3.17rem;
   }
   img {
-    width: 83.33%;
+    width: 91.67%;
   }
   h1 {
     font-size: 4.33rem;
@@ -299,11 +299,11 @@ p {
     margin-bottom: 1.73rem;
   }
   h3 {
-    font-size: 1.83rem;
+    font-size: 1.7rem;
     margin-bottom: 1.63rem;
   }
   h4 {
-    font-size: 1.63rem;
+    font-size: 1.6rem;
     margin-bottom: 1.53rem;
   }
   h5 {
@@ -311,7 +311,7 @@ p {
     margin-bottom: 1.43rem;
   }
   h6 {
-    font-size: 1.03rem;
+    font-size: 0.97rem;
     margin-bottom: 1.33rem;
   }
   hgroup {
@@ -353,7 +353,7 @@ p {
     padding-top: 3.5rem;
   }
   img {
-    width: 75%;
+    width: 87.5%;
   }
   h1 {
     font-size: 4.5rem;
@@ -364,11 +364,11 @@ p {
     margin-bottom: 1.9rem;
   }
   h3 {
-    font-size: 2rem;
+    font-size: 1.9rem;
     margin-bottom: 1.8rem;
   }
   h4 {
-    font-size: 1.8rem;
+    font-size: 1.77rem;
     margin-bottom: 1.7rem;
   }
   h5 {
@@ -376,7 +376,7 @@ p {
     margin-bottom: 1.6rem;
   }
   h6 {
-    font-size: 1.05rem;
+    font-size: 1rem;
     margin-bottom: 1.5rem;
   }
   hgroup {
@@ -418,7 +418,7 @@ p {
     padding-top: 3.83rem;
   }
   img {
-    width: 66.67%;
+    width: 83.33%;
   }
   h1 {
     font-size: 4.67rem;
@@ -429,11 +429,11 @@ p {
     margin-bottom: 2.07rem;
   }
   h3 {
-    font-size: 2.17rem;
+    font-size: 2.1rem;
     margin-bottom: 1.97rem;
   }
   h4 {
-    font-size: 1.97rem;
+    font-size: 1.95rem;
     margin-bottom: 1.87rem;
   }
   h5 {
@@ -441,7 +441,7 @@ p {
     margin-bottom: 1.77rem;
   }
   h6 {
-    font-size: 1.07rem;
+    font-size: 1.03rem;
     margin-bottom: 1.67rem;
   }
   hgroup {
@@ -483,7 +483,7 @@ p {
     padding-top: 4.17rem;
   }
   img {
-    width: 58.33%;
+    width: 79.17%;
   }
   h1 {
     font-size: 4.83rem;
@@ -494,7 +494,7 @@ p {
     margin-bottom: 2.23rem;
   }
   h3 {
-    font-size: 2.33rem;
+    font-size: 2.3rem;
     margin-bottom: 2.13rem;
   }
   h4 {
@@ -506,7 +506,7 @@ p {
     margin-bottom: 1.93rem;
   }
   h6 {
-    font-size: 1.08rem;
+    font-size: 1.07rem;
     margin-bottom: 1.83rem;
   }
   hgroup {
@@ -548,7 +548,7 @@ p {
     padding-top: 4.5rem;
   }
   img {
-    width: 50%;
+    width: 75%;
   }
   h1 {
     font-size: 5rem;

@@ -175,14 +175,14 @@ const options = {
 
     {path: ['li > h2'], property:[{name:'paddingTop', from:2.5, to:4.5, unit:'rem'}] }, // top padding for h2 tags within a list
 
-    {path: ['img'], property:[{name:'width', from:100, to:50, unit:'%'}] },
+    {path: ['img'], property:[{name:'width', from:100, to:75, unit:'%'}] },
 
     {path: ['h1'], property:[{name:'fontSize', from:4.0, to:5.0, unit:'rem'}, {name:'marginBottom', from:1.5, to:2.5, unit:'rem'}] },
     {path: ['h2'], property:[{name:'fontSize', from:2.5, to:2.8, unit:'rem'}, {name:'marginBottom', from:1.4, to:2.4, unit:'rem'}] },
-    {path: ['h3'], property:[{name:'fontSize', from:1.5, to:2.5, unit:'rem'}, {name:'marginBottom', from:1.3, to:2.3, unit:'rem'}] },
-    {path: ['h4'], property:[{name:'fontSize', from:1.3, to:2.3, unit:'rem'}, {name:'marginBottom', from:1.2, to:2.2, unit:'rem'}] },
+    {path: ['h3'], property:[{name:'fontSize', from:1.3, to:2.5, unit:'rem'}, {name:'marginBottom', from:1.3, to:2.3, unit:'rem'}] },
+    {path: ['h4'], property:[{name:'fontSize', from:1.25, to:2.3, unit:'rem'}, {name:'marginBottom', from:1.2, to:2.2, unit:'rem'}] },
     {path: ['h5'], property:[{name:'fontSize', from:1.2, to:2.2, unit:'rem'}, {name:'marginBottom', from:1.1, to:2.1, unit:'rem'}] },
-    {path: ['h6'], property:[{name:'fontSize', from:1.0, to:1.1, unit:'rem'}, {name:'marginBottom', from:1.0, to:2.0, unit:'rem'}] },
+    {path: ['h6'], property:[{name:'fontSize', from:0.9, to:1.1, unit:'rem'}, {name:'marginBottom', from:1.0, to:2.0, unit:'rem'}] },
 
     {path: ['hgroup'], property:[{name:'marginBottom', from:2.5, to:3.5, unit:'rem'}] },
     {path: ['hgroup'], property:[{name:'marginBottom', from:2.4, to:3.4, unit:'rem'}] },
