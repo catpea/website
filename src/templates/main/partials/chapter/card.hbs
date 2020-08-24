@@ -1,0 +1,45 @@
+<div class="card">
+  <!-- <img src="..." class="card-img-top" alt="..."> -->
+  <div class="card-body">
+    <h5 class="card-title">Chapter {{sectionNumber}}</h5>
+    <p class="card-text">
+      <div class="small">Updated {{#first data}}{{timestamp}}{{/first}}</div>
+      {{#if isOldest}}<div class="small text-muted">This is the oldest chapter in the book.</div>{{/if}}
+      {{#if isNewest}}<div class="small text-muted">This is the latest chapter in the book.</div>{{/if}}
+    </p>
+  </div>
+  <ul class="list-group list-group-flush">
+
+    {{#each data}}
+      <li class="list-group-item">
+
+        <!-- tiny size -->
+        <div class="d-sm-none">
+          {{#if image}}<div><a href="{{id}}.html" class="text-reset mr-4 mb-1"><img src="image/ss-{{image}}" class="rounded border border-primary"></a></div>{{/if}}
+          <div><a href="{{id}}.html" class="text-reset">{{title}}</a></div>
+          <div class="small text-muted">{{timestamp}}</div>
+          <div><a href="audio/{{audio}}" class="card-link">Listen</a> <a href="{{id}}.html" class="card-link">Read</a></div>
+        </div>
+
+
+        <!-- normal size -->
+        <div class="d-none d-sm-flex justify-content-start">
+          {{#if image}}<a href="{{id}}.html" class="text-reset mr-4 mb-1"><img src="image/ss-{{image}}" class="rounded border border-primary"></a>{{/if}}
+          <div class="d-flex d-flex align-items-start flex-column">
+            <div class="mb-auto">
+              <a href="{{id}}.html" class="text-reset">{{title}} <sup class="small text-muted">#{{counter}}</sup></a>
+              <div class="small text-muted">Written {{timestamp}}</div>
+            </div>
+            <div class="">
+              <a href="audio/{{audio}}" class="card-link">Listen</a>
+              <a href="{{id}}.html" class="card-link">Read</a>
+            </div>
+          </div>
+        </div>
+
+
+
+      </li>
+    {{/each}}
+  </ul>
+</div>

@@ -1,0 +1,12 @@
+# files starting with hash/pound are ignored, blank lines are ignored.
+# date is in (new Date()).toISOString() format
+
+2020-08-24T21:41:46.561Z | Early Launch | Things maybe broken for a few days, but almost everything works <a href="https://news.catpea.com/">https://news.catpea.com/</a> will be up and recent a while longer, it crashed Chrome on my cheap phone again, YouTube is still working great, but the poems may lag a bit. The best way to listen to latest poems is by going to <a href="https://catpea.com/">https://catpea.com/</a> and clicking listen on the individual poems. I tested multiple audio players and they all had problems. YouTube prevents automating uploads, and all the audio platforms are making it difficult or impossible. I can't combine all the mp3 files into one, because git hub may start complaining about huge new files being added daily (there is no delete on git/github) it is OK to add one poem, bit not all poems in one new mp3 file every day. YouTube can work, I would need to upload a lot manually, but I would have two playlists, so things would be updated daily, and all poems would eventually catch up. I got to ship/deploy the new website today test it live, to start clearing up my to-do, simplify everything and begin automating as much as possible.
+2020-08-23T17:42:24.844Z | Website Upgrade | New Website, again. I am adding support for multiple books, including multiple virtual books that come from a single text repository. This is a very flexible system that should serve for many years.
+
+# Old News
+2020-08-07T21:48:14.475Z | Raised Borders | The User Interface felt empty without a raised border/background motif.
+2020-08-06T20:43:20.118Z | News System | Added news.txt for easy book update reporting.
+2020-08-05T19:26:42.114Z | System Upgrades | Enhanced the navigation, added more tooling, expanded data feed, and fixed up meta titles.
+2020-08-05T14:57:42.342Z | Just Launched | catpea.com is up and running in a much less experimental and a lot more low-power-device-friendly mode.
+2020-08-04T12:13:42.450Z | Launch Prep | Created a standalone website generator, website repository, getting ready to take over catpea.com.

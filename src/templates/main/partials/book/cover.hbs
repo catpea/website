@@ -1,0 +1,12 @@
+<div class="card shadow mb-5">
+  <img src="{{cover}}" class="card-img-top" alt="{{title}} Illustration">
+  <div class="card-body">
+    <a href="{{audio}}" class="btn btn-outline-primary mb-2">Listen to Audio Book</a>
+    {{#unless (matches pageId bookId)}}
+      <a href="{{bookId}}.html" class="btn btn-outline-primary mb-2">{{title}} Home</a>
+    {{/unless}}
+  </div>
+  <div class="card-footer text-muted small">
+    Updated {{#first recent}}{{timestamp}}{{/first}}
+  </div>
+</div>

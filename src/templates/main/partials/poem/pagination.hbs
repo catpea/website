@@ -1,0 +1,44 @@
+<nav aria-label="Poem Navigation" class="no-print">
+  {{#if (matches size 'lg')}}
+    <ul class="pagination pagination-lg">
+  {{else}}
+    <ul class="pagination">
+  {{/if}}
+
+    {{#if content.isOldest}}
+      <!-- <li class="page-item disabled">
+        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Older</a>
+      </li> -->
+    {{else}}
+      <li class="page-item">
+        <a class="page-link" href="{{content.olderId}}.html">Older</a>
+      </li>
+    {{/if}}
+
+    <li class="page-item">
+      <a class="page-link" href="{{parent.id}}.html">{{parent.title}}</a>
+    </li>
+
+    <!-- <li class="page-item disabled">
+      <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+    </li>
+
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item active" aria-current="page">
+      <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li> -->
+
+
+    {{#if content.isNewest}}
+      <!-- <li class="page-item disabled">
+        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Newer</a>
+      </li> -->
+    {{else}}
+      <li class="page-item">
+        <a class="page-link" href="{{content.newerId}}.html">Newer</a>
+      </li>
+    {{/if}}
+
+  </ul>
+</nav>

@@ -1,0 +1,40 @@
+{{#each (reverse data.books) }}
+  {{#each last}}
+    <div class="card bg-secondary mb-3 border-light">
+      <div class="row no-gutters">
+
+        <div class="col-lg-4 order-last order-lg-first p-3" style="background-image: url('image/bl-{{image}}'); background-position: center center; background-size: cover;">
+          {{#if image}}
+            <a href="{{id}}.html" class="text-reset"><img src="image/md-{{image}}" class="card-img shadow" alt="{{title}} Illustration"></a>
+          {{else}}
+            <a href="{{id}}.html" class="text-reset"><img src="{{../cover}}" class="card-img shadow" alt="{{../title}} Illustration"></a>
+          {{/if}}
+        </div>
+
+        <div class="col-lg-8 order-first order-lg-last">
+          <div class="card-body">
+
+            <h5 class="card-title border-bottom border-primary pb-3"><a href="{{id}}.html" class="text-reset">{{../title}} Latest: {{title}} <sup class="small text-muted">#{{counter}}</sup> &raquo;</a></h5>
+            <p class="card-text">
+              {{sentence 6 data.text}}.. <a href="{{id}}.html" class="text-reset">&raquo;</a>
+            </p>
+
+
+            <div>
+              <a href="audio/{{audio}}" class="btn btn-primary mb-2">Listen</a>
+              <a href="{{id}}.html" class="btn btn-outline-primary mb-2">Read</a>
+            </div>
+
+            <div>
+              <a href="{{../id}}.html" class="btn btn-outline-primary mb-2">{{../title}} Book Home</a>
+              <a href="{{../audio}}" class="btn btn-outline-primary mb-2">Audio Book ({{count ../all}} poems)</a>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  {{/each}}
+{{/each}}
