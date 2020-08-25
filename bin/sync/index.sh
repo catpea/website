@@ -16,6 +16,7 @@ else
   echo git mode
   array=(
     "git@github.com:catpea/poetry.git"
+    "git@github.com:catpea/stylesheet.git"
     # "git@github.com:catpea/research.git"
     # "git@github.com:catpea/warrior.git"
   )

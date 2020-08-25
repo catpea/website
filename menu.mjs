@@ -14,7 +14,7 @@ const questions = [
     choices: [
 
     {
-      name: "Synchronize data repositories",
+      name: "Synchronize",
       value: "bin/sync/index.sh",
     },
 
@@ -27,7 +27,7 @@ const questions = [
       name: "Publish",
       value: "bin/publish/index.sh",
     },
- 
+
 
     ],
   },
