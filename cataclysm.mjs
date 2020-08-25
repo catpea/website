@@ -9,6 +9,8 @@ import reverse from 'lodash/reverse.js';
 const options = {
   debug: false,
 
+  author: 'Dr. Meow',
+  
   title: 'Cat Pea',
   subtitle: 'Home of Furkies Purrkies',
   description: 'Advanced Peas of Various Plumage',
