@@ -64,8 +64,8 @@
           <li class="nav-item">
             <a class="nav-link" href="furkies-purrkies.html">Furkies Purrkies</a>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link text-primary" href="notes.html">Notes <span class="sr-only">(current)</span></a>
+          <li class="nav-item">
+            <a class="nav-link" href="notes.html">Notes</a>
           </li>
 
           <!-- This is for a one book only, multiple books show a book dropdown
@@ -85,93 +85,123 @@
     </nav>
     <div class="container">
       <div class="row">
-        <main class="col-xl-9 mb-5">
-          <div class="card mb-3">
-            <div class="card-body">
-              <h5 class="card-title border- border-bottom">Updated News</h5>
-              <p class="card-text">Old codebase for <a href="https://news.catpea.com/">https://news.catpea.com/</a> has been retired now, it kept crashing everything, it crashed Chrome on my cheap phone and IceCat (Firefox Clone) on my Linux just now. Hard to say what it was, complexity, it just grew too big. There is a super-light poetry mirror under <a href="https://catpea.github.io/poetry/">https://catpea.github.io/poetry/</a> and that will always be up to date and accessible to legacy software and older phones. Yikes it is 8PM, I gotta go, it is time for my poetic musings.</p>
-              <p class="card-text"><small class="text-muted">Mon Aug 24 2020 19:50:14 GMT-0400 (Eastern Daylight Time)</small></p>
-            </div>
+        <main class="col-xl-12 mb-5">
+          <nav aria-label="Poem Navigation" class="no-print">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="poetry-0176.html">Older</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="furkies-purrkies.html">Furkies Purrkies</a>
+              </li>
+
+              <!-- <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item active" aria-current="page">
+                <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li> -->
+
+              <!-- <li class="page-item disabled">
+                  <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Newer</a>
+                </li> -->
+            </ul>
+          </nav>
+          <div class="alert alert-success no-print" role="alert">
+            You are reading the latest poem.
           </div>
-          <div class="card mb-3">
-            <div class="card-body">
-              <h5 class="card-title border- border-bottom">Early Launch</h5>
-              <p class="card-text">Things maybe broken for a few days, but almost everything works <a href="https://news.catpea.com/">https://news.catpea.com/</a> will be up and recent a while longer, it crashed Chrome on my cheap phone again, YouTube is still working great, but the poems may lag a bit. The best way to listen to latest poems is by going to <a href="https://catpea.com/">https://catpea.com/</a> and clicking listen on the individual poems. I tested multiple audio players and they all had problems. YouTube prevents automating uploads, and all the audio platforms are making it difficult or impossible. I can&apos;t combine all the mp3 files into one, because git hub may start complaining about huge new files being added daily (there is no delete on git/github) it is OK to add one poem, bit not all poems in one new mp3 file every day. YouTube can work, I would need to upload a lot manually, but I would have two playlists, so things would be updated daily, and all poems would eventually catch up. I got to ship/deploy the new website today test it live, to start clearing up my to-do, simplify everything and begin automating as much as possible.</p>
-              <p class="card-text"><small class="text-muted">Mon Aug 24 2020 17:41:46 GMT-0400 (Eastern Daylight Time)</small></p>
-            </div>
+          <div class="mr-0 mb-2">
+            <a href="audio/poetry-0177.mp3" class="btn btn-primary btn-lg">Listen</a>
           </div>
-          <div class="card mb-3">
-            <div class="card-body">
-              <h5 class="card-title border- border-bottom">Website Upgrade</h5>
-              <p class="card-text">New Website, again. I am adding support for multiple books, including multiple virtual books that come from a single text repository. This is a very flexible system that should serve for many years.</p>
-              <p class="card-text"><small class="text-muted">Sun Aug 23 2020 13:42:24 GMT-0400 (Eastern Daylight Time)</small></p>
-            </div>
-          </div>
-          <div class="card mb-3">
-            <div class="card-body">
-              <h5 class="card-title border- border-bottom">Raised Borders</h5>
-              <p class="card-text">The User Interface felt empty without a raised border/background motif.</p>
-              <p class="card-text"><small class="text-muted">Fri Aug 07 2020 17:48:14 GMT-0400 (Eastern Daylight Time)</small></p>
-            </div>
-          </div>
-          <div class="card mb-3">
-            <div class="card-body">
-              <h5 class="card-title border- border-bottom">News System</h5>
-              <p class="card-text">Added news.txt for easy book update reporting.</p>
-              <p class="card-text"><small class="text-muted">Thu Aug 06 2020 16:43:20 GMT-0400 (Eastern Daylight Time)</small></p>
-            </div>
-          </div>
-          <div class="card mb-3">
-            <div class="card-body">
-              <h5 class="card-title border- border-bottom">System Upgrades</h5>
-              <p class="card-text">Enhanced the navigation, added more tooling, expanded data feed, and fixed up meta titles.</p>
-              <p class="card-text"><small class="text-muted">Wed Aug 05 2020 15:26:42 GMT-0400 (Eastern Daylight Time)</small></p>
-            </div>
-          </div>
-          <div class="card mb-3">
-            <div class="card-body">
-              <h5 class="card-title border- border-bottom">Just Launched</h5>
-              <p class="card-text">catpea.com is up and running in a much less experimental and a lot more low-power-device-friendly mode.</p>
-              <p class="card-text"><small class="text-muted">Wed Aug 05 2020 10:57:42 GMT-0400 (Eastern Daylight Time)</small></p>
-            </div>
-          </div>
-          <div class="card mb-3">
-            <div class="card-body">
-              <h5 class="card-title border- border-bottom">Launch Prep</h5>
-              <p class="card-text">Created a standalone website generator, website repository, getting ready to take over catpea.com.</p>
-              <p class="card-text"><small class="text-muted">Tue Aug 04 2020 08:13:42 GMT-0400 (Eastern Daylight Time)</small></p>
-            </div>
-          </div>
-        </main>
-        <aside class="d-none d-xl-block col-xl-3">
+          <style>
+            .card-body section {
+              margin-bottom: 4rem;
+              font-size: 1.5rem;
+            }
+          </style>
           <div class="card shadow mb-5">
-            <a href="furkies-purrkies.html" class="text-reset"><img src="image/cover-3.jpg" class="card-img-top" alt="Furkies Purrkies Illustration"></a>
+            <div class="card-header text-muted small">
+              Learning Is Sacred &#xB7; Written Monday, August 24th 2020, 8:10:32 pm
+            </div>
+            <img src="image/lg-poetry-0177-illustration.jpg" class="card-img" alt="Learning Is Sacred Illustration">
             <div class="card-body">
-              <h5 class="card-title"><a href="furkies-purrkies.html" class="text-reset">Furkies Purrkies</a></h5>
-              <h6 class="card-subtitle mb-2 text-muted"><a href="furkies-purrkies.html" class="text-reset">Anthology of Inspirational Rhyme</a></h6>
-              <a href="furkies-purrkies.html" class="btn btn-outline-primary mb-2">Furkies Purrkies Home</a>
-              <a href="https://www.youtube.com/playlist?list=PLOo-pqnffyOqsK6hf5tFwMqzvhogksrgW" class="btn btn-outline-primary mb-2">Listen to Audio Book</a>
+              <h3 class="card-title">Learning Is Sacred</h3>
+              <div class="text-muted small">Written Monday, August 24th 2020, 8:10:32 pm</div>
+              <hr>
             </div>
-            <div class="card-footer text-muted small">
-              Updated Sunday, August 23rd 2020, 8:10:15 pm
-            </div>
-          </div>
-          <a name="poetry-0177"></a>
-          <div class="card shadow mb-5">
-            <div class="card-header">
-              <a href="poetry-0177.html" class="text-reset">Latest Poem</a>
-            </div>
-            <a href="poetry-0177.html" class="text-reset"><img src="image/md-poetry-0177-illustration.jpg" class="card-img" alt="Learning Is Sacred Illustration"></a>
             <div class="card-body">
-              <h5 class="card-title"><a href="poetry-0177.html" class="text-reset">Learning Is Sacred</a></h5>
-              <a href="/audio/poetry-0177.mp3" class="btn btn-outline-primary btn-sm">Listen</a>
-              <a href="poetry-0177.html" class="btn btn-outline-primary btn-sm">Read</a>
+              <section>
+                <p>Learning is one of the most important things we do, we need it for our health.</p>
+                <p>Learning helps us rise above our limits, and it sets us free from misperceptions.</p>
+              </section>
+              <section>
+                <p>Learning requires that we progress in layers, that we build upon our existing knowledge.</p>
+                <p>We can only grow more knowledgeable when we build a comfortable little road of delicate achievements.</p>
+              </section>
+              <section>
+                <p>Learning requires happy curiosity, enjoyment, satisfaction, and distant horizons.</p>
+                <p>The best kind of education is beautiful, colorful, enriching, and joyful.</p>
+              </section>
+              <section>
+                <p>Calm, joy, happiness and Love of Life, is the is the secret of genius.</p>
+                <p>Happily sitting down beneath an apple tree, to review one&apos;s journals, and every once in a while hear an apple fall.</p>
+              </section>
+              <section>
+                <p>We have to be very careful to avoid toxic environments that push us into hoop jumping, or worse yet cause fractures and breed trust towards education.</p>
+                <p>In schools of today, we can only really memorize, jump the hoops and follow their rules. That&apos;s not Education, that&apos;s more like role play.</p>
+              </section>
+              <section>
+                <p>Education is too important to play games with</p>
+                <p>Spending years pretending to get educated, is only going to earn your teacher money and grant you debt.</p>
+              </section>
+              <section>
+                <p>You will get older and poorer, and make your make-believe-teachers look more legitimate.</p>
+                <p>Just say no; choose Authenticity and Self Education at your own happy pace with the books you love and teachers you admire.</p>
+              </section>
+              <section>
+                <p>Learn on your own, listen to Audio Books and Lectures, choose happiness.</p>
+                <p>Learning is sacred, choose adventure, choose genius.</p>
+              </section>
             </div>
             <div class="card-footer text-muted small">
               Written Monday, August 24th 2020, 8:10:32 pm
             </div>
           </div>
-        </aside>
+          <div class="alert alert-success no-print" role="alert">
+            <h4 class="alert-heading">Thank you for reading!</h4>
+            <p>You are reading the latest poem.</p>
+            <hr>
+            <p class="mb-0">There maybe some more if you go back to <a href="furkies-purrkies.html" class="alert-link">Furkies Purrkies</a>, otherwise click <a class="alert-link" href="poetry-0176.html">older</a> for the previous one.</p>
+          </div>
+          <div class="mr-0 mb-2">
+            <a href="audio/poetry-0177.mp3" class="btn btn-primary btn-lg">Listen</a>
+          </div>
+          <nav aria-label="Poem Navigation" class="no-print">
+            <ul class="pagination pagination-lg">
+              <li class="page-item">
+                <a class="page-link" href="poetry-0176.html">Older</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="furkies-purrkies.html">Furkies Purrkies</a>
+              </li>
+
+              <!-- <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item active" aria-current="page">
+                <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li> -->
+
+              <!-- <li class="page-item disabled">
+                  <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Newer</a>
+                </li> -->
+            </ul>
+          </nav>
+        </main>
       </div>
     </div>
     <footer class="bg-dark text-white mt-5">
