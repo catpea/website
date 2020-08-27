@@ -11,7 +11,7 @@
 
         {{#if (matches page.id 'index')}}
           <li class="nav-item active d-none d-md-block">
-            <a class="nav-link text-primary" href="/">{{options.title}} <span class="sr-only">(current)</span></a>
+            <a class="nav-link text-warning" href="/">{{options.title}} <span class="sr-only">(current)</span></a>
           </li>
         {{else}}
           <li class="nav-item d-none d-md-block">
@@ -23,7 +23,7 @@
         {{#each data.books}}
           {{#if (matches ../page.id id)}}
             <li class="nav-item active">
-              <a class="nav-link text-primary" href="{{id}}.html">{{title}} <span class="sr-only">(current)</span></a>
+              <a class="nav-link text-warning" href="{{id}}.html">{{title}} <span class="sr-only">(current)</span></a>
             </li>
           {{else}}
             <li class="nav-item">
@@ -32,15 +32,15 @@
           {{/if}}
         {{/each}}
 
-        {{#if (matches page.id 'notes')}}
+        <!-- {{#if (matches page.id 'notes')}}
           <li class="nav-item active">
-            <a class="nav-link text-primary" href="notes.html">Notes <span class="sr-only">(current)</span></a>
+            <a class="nav-link text-warning" href="notes.html">Notes <span class="sr-only">(current)</span></a>
           </li>
         {{else}}
           <li class="nav-item">
             <a class="nav-link" href="notes.html">Notes</a>
           </li>
-        {{/if}}
+        {{/if}} -->
 
       </ul>
 

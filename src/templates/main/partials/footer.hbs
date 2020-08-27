@@ -9,13 +9,13 @@
 
         <ul class="list-unstyled">
           <ul class="list-unstyled">
-            <!-- <li><a href="toc.html" class="text-reset">Chapters</a></li> -->
-            <!-- <li><a href="{{website}}" class="text-reset">Home</a></li> -->
-            <!-- <li><a href="https://github.com/catpea/poetry" rel="noopener noreferrer" target="_blank" class="text-reset">Code</a></li> -->
-            <li><a href="https://github.com/catpea/poetry/issues" rel="noopener noreferrer" target="_blank" class="text-reset">Bugs</a></li>
-            <li><a href="https://catpea.github.io/poetry/" rel="noopener noreferrer" target="_blank" class="text-reset">Mirror</a></li>
-            <li><a href="https://www.youtube.com/playlist?list=PLOo-pqnffyOqsK6hf5tFwMqzvhogksrgW" rel="noopener noreferrer" target="_blank" class="text-reset">Audio</a></li>
-            <!-- <li><a href="styleguide.html" class="secondary" class="text-reset">Design Style Guide</a></li> -->
+            <!-- <li><a href="toc.html" class="text-reset text-decoration-none">Chapters</a></li> -->
+            <!-- <li><a href="{{website}}" class="text-reset text-decoration-none">Home</a></li> -->
+            <!-- <li><a href="https://github.com/catpea/poetry" rel="noopener noreferrer" target="_blank" class="text-reset text-decoration-none">Code</a></li> -->
+            <li><a href="https://github.com/catpea/poetry/issues" rel="noopener noreferrer" target="_blank" class="text-reset text-decoration-none">Bugs</a></li>
+            <li><a href="https://catpea.github.io/poetry/" rel="noopener noreferrer" target="_blank" class="text-reset text-decoration-none">Mirror</a></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLOo-pqnffyOqsK6hf5tFwMqzvhogksrgW" rel="noopener noreferrer" target="_blank" class="text-reset text-decoration-none">Audio</a></li>
+            <!-- <li><a href="styleguide.html" class="secondary" class="text-reset text-decoration-none">Design Style Guide</a></li> -->
           </ul>
         </ul>
       </div>
@@ -29,9 +29,9 @@
           <div class="col">
             <h3 class="h6 text-uppercase">Social</h3>
             <ul class="list-unstyled">
-              <!-- <li><a href="author.html" class="text-reset">Author</a></li> -->
+              <!-- <li><a href="author.html" class="text-reset text-decoration-none">Author</a></li> -->
               {{#each data.social}}
-                <li><a href="{{url}}" class="text-reset">{{title}}</a></li>
+                <li><a href="{{url}}" class="text-reset text-decoration-none">{{title}}</a></li>
               {{/each}}
             </ul>
 
@@ -41,7 +41,7 @@
             <h3 class="h6 text-uppercase">Books</h3>
             <ul class="list-unstyled">
               {{#each data.books}}
-                <li><a href="{{url}}" class="text-reset">{{title}}</a></li>
+                <li><a href="{{url}}" class="text-reset text-decoration-none">{{title}}</a></li>
               {{/each}}
             </ul>
           </div>
@@ -54,14 +54,14 @@
     <!-- second row -->
     <div class="row border-top border-primary py-3 shadow text-center">
       <div class="col">
-        <a href="notes.html" class="text-reset" title="top">Notes</a>
-        <!-- &middot;         <a href="style.html" class="text-reset" title="top">Style</a> -->
+        <a href="notes.html" class="text-reset text-decoration-none" title="top">Notes</a>
+        | <a href="style.html" class="text-reset text-decoration-none" title="top">Style</a>
       </div>
       <div class="col">
-        <a href="#top" class="text-reset" title="top">Top</a>
+        <a href="#top" class="text-reset text-decoration-none" title="top">Top</a>
       </div>
       <div class="col">
-        <a href="{{options.canonical}}" class="text-reset" title="top">Cat Pea</a>
+        <a href="{{options.canonical}}" class="text-reset text-decoration-none" title="top">Cat Pea</a>
       </div>
     </div>
 

@@ -15,8 +15,8 @@
 
         <!-- tiny size -->
         <div class="d-sm-none">
-          {{#if image}}<div><a href="{{id}}.html" class="text-reset mr-4 mb-1"><img src="image/ss-{{image}}" class="rounded border border-primary"></a></div>{{/if}}
-          <div><a href="{{id}}.html" class="text-reset">{{title}}</a></div>
+          {{#if image}}<div><a href="{{id}}.html" class="text-reset text-decoration-none mr-4 mb-1"><img src="image/ss-{{image}}" class="rounded border border-primary"></a></div>{{/if}}
+          <div><a href="{{id}}.html" class="text-reset text-decoration-none">{{title}}</a></div>
           <div class="small text-muted">{{timestamp}}</div>
           <div><a href="audio/{{audio}}" class="card-link">Listen</a> <a href="{{id}}.html" class="card-link">Read</a></div>
         </div>
@@ -24,10 +24,10 @@
 
         <!-- normal size -->
         <div class="d-none d-sm-flex justify-content-start">
-          {{#if image}}<a href="{{id}}.html" class="text-reset mr-4 mb-1"><img src="image/ss-{{image}}" class="rounded border border-primary"></a>{{/if}}
+          {{#if image}}<a href="{{id}}.html" class="text-reset text-decoration-none mr-4 mb-1"><img src="image/ss-{{image}}" class="rounded border border-primary"></a>{{/if}}
           <div class="d-flex d-flex align-items-start flex-column">
             <div class="mb-auto">
-              <a href="{{id}}.html" class="text-reset">{{title}} <sup class="small text-muted">#{{counter}}</sup></a>
+              <a href="{{id}}.html" class="text-reset text-decoration-none">{{title}} <sup class="small text-muted">#{{counter}}</sup></a>
               <div class="small text-muted">Written {{timestamp}}</div>
             </div>
             <div class="">

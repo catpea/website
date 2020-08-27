@@ -5,18 +5,18 @@
 
         <div class="col-lg-4 order-last order-lg-first p-3" style="background-image: url('image/bl-{{image}}'); background-position: center center; background-size: cover;">
           {{#if image}}
-            <a href="{{id}}.html" class="text-reset"><img src="image/md-{{image}}" class="card-img shadow" alt="{{title}} Illustration"></a>
+            <a href="{{id}}.html" class="text-reset text-decoration-none"><img src="image/md-{{image}}" class="card-img shadow" alt="{{title}} Illustration"></a>
           {{else}}
-            <a href="{{id}}.html" class="text-reset"><img src="{{../cover}}" class="card-img shadow" alt="{{../title}} Illustration"></a>
+            <a href="{{id}}.html" class="text-reset text-decoration-none"><img src="{{../cover}}" class="card-img shadow" alt="{{../title}} Illustration"></a>
           {{/if}}
         </div>
 
         <div class="col-lg-8 order-first order-lg-last">
           <div class="card-body">
 
-            <h5 class="card-title border-bottom border-primary pb-3"><a href="{{id}}.html" class="text-reset">{{../title}} Latest: {{title}} <sup class="small text-muted">#{{counter}}</sup> &raquo;</a></h5>
+            <h5 class="card-title border-bottom border-primary pb-3"><a href="{{id}}.html" class="text-reset text-decoration-none">{{../title}} Latest: {{title}} <sup class="small text-muted">#{{counter}}</sup> &raquo;</a></h5>
             <p class="card-text">
-              {{sentence 6 data.text}}.. <a href="{{id}}.html" class="text-reset">&raquo;</a>
+              {{sentence 6 data.text}}.. <a href="{{id}}.html" class="text-reset text-decoration-none">&raquo;</a>
             </p>
 
 

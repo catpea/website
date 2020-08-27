@@ -72,8 +72,51 @@ const data = {
     //
     // },
 
-  ]
+  ],
 
+
+  // for stylesheet
+  color:{
+
+    name:[
+      {name:'blue'},
+      {name:'indigo'},
+      {name:'purple'},
+      {name:'pink'},
+      {name:'red'},
+      {name:'orange'},
+      {name:'yellow'},
+      {name:'green'},
+      {name:'teal'},
+      {name:'cyan'},
+    ],
+
+    gray:[
+      {name:'white'},
+      {name:'gray-100'},
+      {name:'gray-200'},
+      {name:'gray-300'},
+      {name:'gray-400'},
+      {name:'gray-500'},
+      {name:'gray-600'},
+      {name:'gray-700'},
+      {name:'gray-800'},
+      {name:'gray-900'},
+      {name:'black', classes: "text-white"},
+    ],
+
+    context:[
+      {name:'primary'},
+      {name:'secondary'},
+      {name:'success'},
+      {name:'info'},
+      {name:'warning'},
+      {name:'danger'},
+      {name:'light'},
+      {name:'dark', classes: "text-white"},
+    ],
+
+  }
 
 }
 
