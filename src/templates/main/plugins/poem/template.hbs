@@ -12,9 +12,21 @@
   <div class="container">
     <div class="row">
 
-      <main class="col-xl-12 mb-5">
-          {{>poemHome}}
+      <main class="col-lg-8 mb-5">
+          {{>poemText}}
       </main>
+
+      <aside class="d-none d-lg-block col-lg-4 mb-5">
+
+        {{#with parent}}
+          {{>cardBook}}
+        {{/with}}
+
+        {{#each (slice 0 3 (exclude content.id parent.latest))}}
+          {{>cardPoem}}
+        {{/each}}
+
+      </aside>
 
     </div>
   </div>

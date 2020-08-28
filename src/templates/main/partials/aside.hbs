@@ -1,9 +1,10 @@
 
-  {{#each data.books}}
+{{#each data.books}}
 
-    {{>bookCallout}}
-    {{#each latest}}
-      {{>poemCallout}}
-    {{/each}}
+  {{>cardBook}}
 
+  {{#each (slice 0 2 latest)}}
+    {{>cardPoem}}
   {{/each}}
+
+{{/each}}

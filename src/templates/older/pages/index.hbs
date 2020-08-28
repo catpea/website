@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  {{>head}}
+</head>
+
+<body>
+  {{>header}}
+  {{>nav}}
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col mb-4">
+
+
+          <div class="row">
+            <div class="col mb-5">
+              {{>cardPoem}}
+            </div>
+          </div>
+
+
+      </div>
+    </div>
+
+    <div class="row">
+
+      <main class="col-xl-9 mb-5">
+        {{>homeIntro}}
+      </main>
+      <aside class="d-none d-xl-block col-xl-3">
+        <div class="alert alert-success no-print" role="alert">
+          <div class="small mb-2">The {{options.title}} Homepage has only a handful of recent poems, visit their homepage for more.</div>
+
+          <ul class="list-unstyled">
+            {{#each data.books}}
+              <li><a href="{{url}}" class="alert-link">{{title}} Home</a></li>
+            {{/each}}
+          </ul>
+
+        </div>
+        {{>aside}}
+      </aside>
+    </div>
+  </div>
+
+  {{>footer}}
+  {{>debug}}
+  {{>foot}}
+</body>
+
+</html>

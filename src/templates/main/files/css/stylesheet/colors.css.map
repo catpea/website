@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "colors.css",
+	"sources": [
+		"../../src/scss/colors.scss"
+	],
+	"sourcesContent": [
+		"$blue:    #434651 !default;\n$indigo:  #474455 !default;\n$purple:  #484454 !default;\n$pink:    #524248 !default;\n$red:     #564142 !default;\n$orange:  #4e4441 !default;\n$yellow:  #494641 !default;\n$green:   #414844 !default;\n$teal:    #414845 !default;\n$cyan:    #424749 !default;\n\n"
+	],
+	"names": [],
+	"mappings": ""
+}

@@ -1,13 +1,15 @@
 {{#each data.books}}
- 
+
     <div class="row row-cols-1">
+
       {{#each home}}
         <div class="col mb-4">
-          {{>poemSecondary}}
+          {{>cardPoem}}
         </div>
       {{/each}}
+
       <div class="col mb-4">
-        {{>homeMore}}
+        {{>cardMore}}
       </div>
     </div>
 

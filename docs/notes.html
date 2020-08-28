@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
-    <title>Cat Pea</title>
+    <title>Cat Pea Industries</title>
     <meta name="author" content="Dr. Meow">
-    <meta name="description" content="Cat Pea: Home of Furkies Purrkies by Dr. Meow">
+    <meta name="description" content="Cat Pea Industries: Home of Furkies Purrkies by Dr. Meow">
     <meta name="generator" content="https://github.com/catpea/cataclysm">
     <link rel="canonical" href="https://catpea.com/">
     <meta name="robots" content="index, follow">
@@ -15,14 +15,14 @@
     <a name="top"></a>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow h3 mb-5">
       <div class="container-fluid">
-        <a class="navbar-brand text-muted" href="/"><span class="h2 d-md-none text-primary">Cat Pea</span></a>
+        <a class="navbar-brand text-muted" href="/"><span class="h2 d-md-none text-primary">Cat Pea Industries</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
             <li class="nav-item d-none d-md-block">
-              <a class="nav-link" href="/">Cat Pea</a>
+              <a class="nav-link" href="/">Cat Pea Industries</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="furkies-purrkies.html">Furkies Purrkies</a>
@@ -40,63 +40,70 @@
     <div class="container">
       <div class="row">
         <main class="col-xl-9 mb-5">
-          <div class="card mb-3">
+          <div class="card bg-dark text-warning mb-3">
+            <div class="card-body">
+              <h5 class="card-title border-info border-bottom">Dark UI and Usability</h5>
+              <p class="card-text">More UI updates, I ran a lot of tests and tested some tooling against <a href="https://getbootstrap.com" target="_blank" rel="noopener noreferrer">Bootstrap</a>. In short Bootstrap is not yet ready for dark mode, the solution, I think is the best, is to add more colors, this time for backgrounds but they have so many developers and so many ideas they&apos;ll probably find some better way. My tools experimented with adjusting colors on the <a href="https://www.hsluv.org/" target="_blank" rel="noopener noreferrer">HSLuv</a> scale and pretty much worked but currently Bootstrap allows placing primary color on primary background and does not see anything wrong with the fact that both are the same color. Hence, my idea of having a separate theme palette with background colors, but all components that have backgrounds (buttons, alerts, drop-downs) would have to be rewritten to make use of the new separate background palette... better than automatically calculating it during compilation. Then simple tools could be made to generate backgrounds from primary colors. Like the one I made: <a href="https://github.com/catpea/catkin" target="_blank" rel="noopener noreferrer">https://github.com/catpea/catkin</a>.</p>
+              <p class="card-text"><small class="text-muted">Thu Aug 27 2020 18:14:44 GMT-0400 (Eastern Daylight Time)</small></p>
+            </div>
+          </div>
+          <div class="card bg-dark text-warning mb-3">
             <div class="card-body">
               <h5 class="card-title border-info border-bottom">Default Colors</h5>
               <p class="card-text">Ew, I had to switch back to default colors. I upgraded to Bootstrap 5 (was 4.5) and I found that the new code is much better for developing custom designs (they call it utilities api) but I ran out of time today, so just to be safe I will disable custom colors so that everything is readable and get back to creating color themes tomorrow.</p>
               <p class="card-text"><small class="text-muted">Tue Aug 25 2020 17:53:42 GMT-0400 (Eastern Daylight Time)</small></p>
             </div>
           </div>
-          <div class="card mb-3">
+          <div class="card bg-dark text-warning mb-3">
             <div class="card-body">
               <h5 class="card-title border-info border-bottom">Updated News</h5>
               <p class="card-text">Old codebase for <a href="https://news.catpea.com/">https://news.catpea.com/</a> has been retired now, it kept crashing everything, it crashed Chrome on my cheap phone and IceCat (Firefox Clone) on my Linux just now. Hard to say what it was, complexity, it just grew too big. There is a super-light poetry mirror under <a href="https://catpea.github.io/poetry/">https://catpea.github.io/poetry/</a> and that will always be up to date and accessible to legacy software and older phones. Yikes it is 8PM, I gotta go, it is time for my poetic musings.</p>
               <p class="card-text"><small class="text-muted">Mon Aug 24 2020 19:50:14 GMT-0400 (Eastern Daylight Time)</small></p>
             </div>
           </div>
-          <div class="card mb-3">
+          <div class="card bg-dark text-warning mb-3">
             <div class="card-body">
               <h5 class="card-title border-info border-bottom">Early Launch</h5>
               <p class="card-text">Things maybe broken for a few days, but almost everything works <a href="https://news.catpea.com/">https://news.catpea.com/</a> will be up and recent a while longer, it crashed Chrome on my cheap phone again, YouTube is still working great, but the poems may lag a bit. The best way to listen to latest poems is by going to <a href="https://catpea.com/">https://catpea.com/</a> and clicking listen on the individual poems. I tested multiple audio players and they all had problems. YouTube prevents automating uploads, and all the audio platforms are making it difficult or impossible. I can&apos;t combine all the mp3 files into one, because git hub may start complaining about huge new files being added daily (there is no delete on git/github) it is OK to add one poem, bit not all poems in one new mp3 file every day. YouTube can work, I would need to upload a lot manually, but I would have two playlists, so things would be updated daily, and all poems would eventually catch up. I got to ship/deploy the new website today test it live, to start clearing up my to-do, simplify everything and begin automating as much as possible.</p>
               <p class="card-text"><small class="text-muted">Mon Aug 24 2020 17:41:46 GMT-0400 (Eastern Daylight Time)</small></p>
             </div>
           </div>
-          <div class="card mb-3">
+          <div class="card bg-dark text-warning mb-3">
             <div class="card-body">
               <h5 class="card-title border-info border-bottom">Website Upgrade</h5>
               <p class="card-text">New Website, again. I am adding support for multiple books, including multiple virtual books that come from a single text repository. This is a very flexible system that should serve for many years.</p>
               <p class="card-text"><small class="text-muted">Sun Aug 23 2020 13:42:24 GMT-0400 (Eastern Daylight Time)</small></p>
             </div>
           </div>
-          <div class="card mb-3">
+          <div class="card bg-dark text-warning mb-3">
             <div class="card-body">
               <h5 class="card-title border-info border-bottom">Raised Borders</h5>
               <p class="card-text">The User Interface felt empty without a raised border/background motif.</p>
               <p class="card-text"><small class="text-muted">Fri Aug 07 2020 17:48:14 GMT-0400 (Eastern Daylight Time)</small></p>
             </div>
           </div>
-          <div class="card mb-3">
+          <div class="card bg-dark text-warning mb-3">
             <div class="card-body">
               <h5 class="card-title border-info border-bottom">News System</h5>
               <p class="card-text">Added news.txt for easy book update reporting.</p>
               <p class="card-text"><small class="text-muted">Thu Aug 06 2020 16:43:20 GMT-0400 (Eastern Daylight Time)</small></p>
             </div>
           </div>
-          <div class="card mb-3">
+          <div class="card bg-dark text-warning mb-3">
             <div class="card-body">
               <h5 class="card-title border-info border-bottom">System Upgrades</h5>
               <p class="card-text">Enhanced the navigation, added more tooling, expanded data feed, and fixed up meta titles.</p>
               <p class="card-text"><small class="text-muted">Wed Aug 05 2020 15:26:42 GMT-0400 (Eastern Daylight Time)</small></p>
             </div>
           </div>
-          <div class="card mb-3">
+          <div class="card bg-dark text-warning mb-3">
             <div class="card-body">
               <h5 class="card-title border-info border-bottom">Just Launched</h5>
               <p class="card-text">catpea.com is up and running in a much less experimental and a lot more low-power-device-friendly mode.</p>
               <p class="card-text"><small class="text-muted">Wed Aug 05 2020 10:57:42 GMT-0400 (Eastern Daylight Time)</small></p>
             </div>
           </div>
-          <div class="card mb-3">
+          <div class="card bg-dark text-warning mb-3">
             <div class="card-body">
               <h5 class="card-title border-info border-bottom">Launch Prep</h5>
               <p class="card-text">Created a standalone website generator, website repository, getting ready to take over catpea.com.</p>
@@ -105,7 +112,7 @@
           </div>
         </main>
         <aside class="d-none d-xl-block col-xl-3">
-          <div class="card shadow mb-5">
+          <div class="card bg-dark text-white shadow mb-5">
             <a href="furkies-purrkies.html" class="text-reset text-decoration-none"><img src="image/cover-3.jpg" class="card-img-top" alt="Furkies Purrkies Illustration"></a>
             <div class="card-body">
               <h5 class="card-title"><a href="furkies-purrkies.html" class="text-reset text-decoration-none">Furkies Purrkies</a></h5>
@@ -114,22 +121,35 @@
               <a href="https://www.youtube.com/playlist?list=PLOo-pqnffyOqsK6hf5tFwMqzvhogksrgW" class="btn btn-outline-primary mb-2">Listen to Audio Book</a>
             </div>
             <div class="card-footer text-muted small">
-              Updated Tuesday, August 25th 2020, 7:19:38 pm
+              Updated
             </div>
           </div>
-          <a name="poetry-0179"></a>
-          <div class="card shadow mb-5">
-            <div class="card-header">
-              <a href="poetry-0179.html" class="text-reset text-decoration-none">Latest Poem</a>
-            </div>
-            <a href="poetry-0179.html" class="text-reset text-decoration-none"><img src="image/md-poetry-0179-illustration.jpg" class="card-img" alt="A Little Rainy Day Illustration"></a>
+          <div class="card text-white bg-dark shadow mb-5">
+            <a href="poetry-0180.html" class="text-reset text-decoration-none"><img src="image/md-poetry-0180-illustration.jpg" class="card-img-top" alt="Breach All The Tipping Points Illustration"></a>
             <div class="card-body">
-              <h5 class="card-title"><a href="poetry-0179.html" class="text-reset text-decoration-none">A Little Rainy Day</a></h5>
-              <a href="/audio/poetry-0179.mp3" class="btn btn-outline-primary btn-sm">Listen</a>
-              <a href="poetry-0179.html" class="btn btn-outline-primary btn-sm">Read</a>
+              <h5 class="card-title"><a href="poetry-0180.html" class="text-reset text-decoration-none">#165: Breach All The Tipping Points</a></h5>
+              <p class="card-text"><a href="poetry-0180.html" class="text-reset text-decoration-none">To the question &#x201C;how far must I go&#x201D;, there is but one answer, and it is never to be uttered quietly. You must feel it and yell it, yell it because every moment is a precious miracle. So you yell: Higher!..</a></p>
             </div>
-            <div class="card-footer text-muted small">
-              Written Wednesday, August 26th 2020, 8:16:23 pm
+            <div class="card-body">
+              <a href="audio/poetry-0180.mp3" class="btn btn-outline-primary shadow mb-2">Listen</a>
+              <a href="poetry-0180.html" class="btn btn-outline-primary shadow mb-2">Read</a>
+            </div>
+            <div class="card-footer small text-muted">
+              Thursday, August 27th 2020, 8:12:53 pm
+            </div>
+          </div>
+          <div class="card text-white bg-dark shadow mb-5">
+            <a href="poetry-0179.html" class="text-reset text-decoration-none"><img src="image/md-poetry-0179-illustration.jpg" class="card-img-top" alt="A Little Rainy Day Illustration"></a>
+            <div class="card-body">
+              <h5 class="card-title"><a href="poetry-0179.html" class="text-reset text-decoration-none">#164: A Little Rainy Day</a></h5>
+              <p class="card-text"><a href="poetry-0179.html" class="text-reset text-decoration-none">It rained today, but was also my jogging day, so went about it in a warrior&apos;s way. I looked out the window and it was entirely too dark, I said, &quot;I hope I wont have to hide under a tree in some park. &quot; As I made it to Ford Road it didn&apos;t seem that bad, and then I felt the first three drops hit my head...</a></p>
+            </div>
+            <div class="card-body">
+              <a href="audio/poetry-0179.mp3" class="btn btn-outline-primary shadow mb-2">Listen</a>
+              <a href="poetry-0179.html" class="btn btn-outline-primary shadow mb-2">Read</a>
+            </div>
+            <div class="card-footer small text-muted">
+              Wednesday, August 26th 2020, 8:16:23 pm
             </div>
           </div>
         </aside>
@@ -138,10 +158,10 @@
     <footer class="bg-dark text-white mt-5">
       <div class="container-fluid">
         <div class="row shadow">
-          <div class="col-md-2 col-lg-3 mt-3">
-            <h3 class="h6 text-uppercase">Cat Pea</h3>
+          <div class="col-md-5 col-lg-3 mt-3">
+            <h3 class="h1 font-weight-bolder">Cat Pea Industries</h3>
             <p class="small mb-0">Home of Furkies Purrkies</p>
-            <p class="small text-muted border-bottom border-primary">Advanced Peas of Various Plumage</p>
+            <p class="small text-muted border-bottom border-primary">Various Peas of Fanciful Plumage</p>
             <ul class="list-unstyled">
               <ul class="list-unstyled">
 
@@ -158,12 +178,10 @@
               </ul>
             </ul>
           </div>
-          <div class="col-md-2 col-lg-3 mt-3">
-          </div>
-          <div class="col-md-8 col-lg-6 mt-3">
+          <div class="col-md-7 col-lg-6 mt-3">
             <div class="row">
-              <div class="col">
-                <h3 class="h6 text-uppercase">Social</h3>
+              <div class="col text-center">
+                <h2 class="font-weight-bolder">Social</h2>
                 <ul class="list-unstyled">
 
                   <!-- <li><a href="author.html" class="text-reset text-decoration-none">Author</a></li> -->
@@ -171,10 +189,10 @@
                   <li><a href="https://www.youtube.com/playlist?list=PLOo-pqnffyOqsK6hf5tFwMqzvhogksrgW" class="text-reset text-decoration-none">YouTube</a></li>
                 </ul>
               </div>
-              <div class="col">
-                <h3 class="h6 text-uppercase">Books</h3>
+              <div class="col text-center">
+                <h2 class="font-weight-bolder">Books</h2>
                 <ul class="list-unstyled">
-                  <li><a href="https://catpea.com/furkies-purrkies.html" class="text-reset text-decoration-none">Furkies Purrkies</a></li>
+                  <li><a href="furkies-purrkies.html" class="text-reset text-decoration-none">Furkies Purrkies</a></li>
                 </ul>
               </div>
             </div>

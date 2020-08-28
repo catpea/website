@@ -35,18 +35,45 @@ const data = {
       url: 'https://catpea.com/furkies-purrkies.html',
       audio: 'https://www.youtube.com/playlist?list=PLOo-pqnffyOqsK6hf5tFwMqzvhogksrgW',
 
-      last: poetryFeed.slice(0,1),
-      home: poetryFeed.slice(1,14),
+      //
+      // last: poetryFeed.slice(0,1),
+      // home: poetryFeed.slice(1,14),
+      //
+      // latest: poetryFeed.splice(0,1),
+      // recent: poetryFeed.splice(0,14),
+      // more: poetryFeed.splice(0,14),
+      // rest: poetryFeed,
 
-      latest: poetryFeed.splice(0,1),
-      recent: poetryFeed.splice(0,14),
-      more: poetryFeed.splice(0,14),
-      rest: poetryFeed,
-
-      all: fs.readJsonSync('.sources/poetry/dist/feed/feed.json'),
+      chronological: fs.readJsonSync('.sources/poetry/dist/feed/feed.json'),
+      latest: fs.readJsonSync('.sources/poetry/dist/feed/feed.json').reverse(),
       chapters: paginate(fs.readJsonSync('.sources/poetry/dist/feed/feed.json')),
 
     },
+    // {
+    //   id:'tractatus',
+    //   title: 'Tractatus',
+    //   subtitle: 'Dreams of The Future',
+    //   category: "Philosophy",
+    //   author: 'Dr. Meow, Ph.D.',
+    //   cover: 'image/tractatus.jpg',
+    //
+    //   url: 'https://catpea.com/furkies-purrkies.html',
+    //   audio: 'https://www.youtube.com/playlist?list=PLOo-pqnffyOqsK6hf5tFwMqzvhogksrgW',
+    //
+    //   //
+    //   // last: poetryFeed.slice(0,1),
+    //   // home: poetryFeed.slice(1,14),
+    //   //
+    //   // latest: poetryFeed.splice(0,1),
+    //   // recent: poetryFeed.splice(0,14),
+    //   // more: poetryFeed.splice(0,14),
+    //   // rest: poetryFeed,
+    //
+    //   chronological: fs.readJsonSync('.sources/poetry/dist/feed/feed.json'),
+    //   latest: fs.readJsonSync('.sources/poetry/dist/feed/feed.json').reverse(),
+    //   chapters: paginate(fs.readJsonSync('.sources/poetry/dist/feed/feed.json')),
+    //
+    // },
 
     // {
     //   title: 'Book Of The Warrior',

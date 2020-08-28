@@ -1,0 +1,26 @@
+<div class="container-fluid mb-5">
+  <div class="row row-cols-1">
+    <div class="col mb-4">
+      <div class="card bg-dark text-light">
+        <div class="card-body">
+          <ul class="nav justify-content-center nav-pills">
+
+            <li class="nav-item">
+              <a class="nav-link{{#if (matches page.type "latest")}} active{{/if}}" href="{{content.id}}.html">Latest First</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link{{#if (matches page.type "toc")}} active{{/if}}" href="{{content.id}}-toc.html">Oldest First</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link{{#if (matches page.type "cards")}} active{{/if}}" href="{{content.id}}-cards.html">Card View</a>
+            </li>
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

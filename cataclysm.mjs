@@ -10,10 +10,10 @@ const options = {
   debug: false,
 
   author: 'Dr. Meow',
-  
-  title: 'Cat Pea',
+
+  title: 'Cat Pea Industries',
   subtitle: 'Home of Furkies Purrkies',
-  description: 'Advanced Peas of Various Plumage',
+  description: 'Various Peas of Fanciful Plumage',
 
   domain: 'catpea.com',
   url: 'https://catpea.com',

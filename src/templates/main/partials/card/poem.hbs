@@ -1,0 +1,20 @@
+<div class="card text-white bg-dark shadow mb-5">
+  {{#if image}}
+  <a href="{{id}}.html" class="text-reset text-decoration-none"><img src="image/md-{{image}}" class="card-img-top" alt="{{title}} Illustration"></a>
+  {{/if}}
+  <div class="card-body">
+    <h5 class="card-title"><a href="{{id}}.html" class="text-reset text-decoration-none">#{{counter}}: {{title}}</a></h5>
+    <p class="card-text"><a href="{{id}}.html" class="text-reset text-decoration-none">{{sentence 3 data.text}}..</a></p>
+  </div>
+  <div class="card-body">
+
+    {{#if audio}}
+    <a href="audio/{{audio}}" class="btn btn-outline-primary shadow mb-2">Listen</a>
+    {{/if}}
+
+    <a href="{{id}}.html" class="btn btn-outline-primary shadow mb-2">Read</a>
+  </div>
+  <div class="card-footer small text-muted">
+    {{timestamp}}
+  </div>
+</div>
