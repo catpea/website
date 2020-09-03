@@ -22,6 +22,12 @@ const data = {
       // { title:'CatPea',  url:'https://catpea.com/' },
   ],
 
+  pages: []
+    .concat(fs.readJsonSync('.sources/poetry/dist/feed/feed.json'))
+    .concat([])
+    .concat([])
+  ,
+
   books:[
 
     {
