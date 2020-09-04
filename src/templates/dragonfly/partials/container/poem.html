@@ -1,0 +1,85 @@
+<template name="poem-navigation">
+  <nav aria-label="Poem Navigation" class="no-print">
+
+      <ul class="pagination pagination-lg">
+
+      <li if="content.isOldest" not="true" class="page-item">
+        <a class="page-link bg-dark text-white border-dark" href="${content.olderId}.html">Older</a>
+      </li>
+
+      <li class="page-item">
+        <a class="page-link bg-dark text-white border-dark" href="${parent.id}.html">${parent.title}</a>
+      </li>
+
+      <li if="content.isNewest" not="true" class="page-item">
+        <a class="page-link bg-dark text-white border-dark" href="${content.newerId}.html">Newer</a>
+      </li>
+
+    </ul>
+  </nav>
+</template>
+
+<template name="poem-listen">
+  <div if="content.audio" class="mr-0 mb-2">
+    <a href="audio/${content.audio}" class="btn btn-primary btn-lg">Listen</a>
+  </div>
+</template>
+
+<style>
+.card-body section {
+  margin-bottom: 4rem;
+}
+</style>
+
+<poem-navigation></poem-navigation>
+
+<div if="content.isNewest" class="alert alert-success no-print" role="alert">
+    You are reading the latest poem.
+</div>
+
+<poem-listen></poem-listen>
+
+<div class="card bg-dark text-white shadow mb-5">
+
+  <div class="card-header text-muted small">
+    #${content.counter}: ${content.title} &middot; Written ${content.timestamp}
+  </div>
+
+  <img if="content.image" src="image/lg-${content.image}" class="card-img" alt="${content.title} Illustration">
+
+  <div class="card-body">
+    <h3 class="card-title">${content.title}</h3>
+    <div class="text-muted small">Written ${content.timestamp}</div>
+    <hr>
+  </div>
+
+  <div class="card-body">
+    ${content.data.html}
+  </div>
+
+  <div class="card-footer text-muted small">
+    Written ${content.timestamp}
+  </div>
+
+</div>
+
+
+<div if="content.isOldest" class="alert alert-warning no-print" role="alert">
+  <h4 class="alert-heading">Thank you for reading!</h4>
+  <p>You are reading the oldest poem.</p>
+  <hr>
+  <p class="mb-0">
+    You can return to <a href="${parent.url}" class="alert-link">${parent.title}</a> or <a href="${options.url}" class="alert-link">${options.title}</a>.
+  </p>
+</div>
+
+<div if="content.isNewest" class="alert alert-success no-print" role="alert">
+  <h4 class="alert-heading">Thank you for reading!</h4>
+  <p>You are reading the latest poem.</p>
+  <hr>
+  <p class="mb-0">There maybe some more if you go back to <a href="${parent.id}.html" class="alert-link">${parent.title}</a>, otherwise click <a class="alert-link" href="${content.olderId}.html">older</a> for the previous one.</p>
+</div>
+
+<poem-listen></poem-listen>
+
+<poem-navigation></poem-navigation>

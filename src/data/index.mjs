@@ -22,12 +22,6 @@ const data = {
       // { title:'CatPea',  url:'https://catpea.com/' },
   ],
 
-  pages: []
-    .concat(fs.readJsonSync('.sources/poetry/dist/feed/feed.json'))
-    .concat([])
-    .concat([])
-  ,
-
   books:[
 
     {
@@ -50,7 +44,7 @@ const data = {
       // more: poetryFeed.splice(0,14),
       // rest: poetryFeed,
 
-      chronological: fs.readJsonSync('.sources/poetry/dist/feed/feed.json'),
+      feed: fs.readJsonSync('.sources/poetry/dist/feed/feed.json'),
       latest: fs.readJsonSync('.sources/poetry/dist/feed/feed.json').reverse(),
       chapters: paginate(fs.readJsonSync('.sources/poetry/dist/feed/feed.json')),
 
