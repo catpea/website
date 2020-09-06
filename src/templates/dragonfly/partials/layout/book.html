@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
 
-    <main class="col-xl-9 mb-5">
+    <main class="col-xl-12 mb-5">
       <slot name="main">
         <!-- this is the main listing -->
 
@@ -11,43 +11,38 @@
             <card-book with="content"></card-book>
           </div>
 
-          <div each="content.latest" slice="0, 1" class="col mb-4">
+          <div each="content.feed" slice="0, 1" transform="reverse" class="col mb-4">
             <card-poem></card-poem>
           </div>
 
         </div>
 
-          <div class="row row-cols-1 row-cols-lg-2">
+        <div class="row row-cols-1 row-cols-lg-2">
 
-              <div each="content.chapters.data" transform="reverse" class="col mb-4">
-                  <card-chapter/>
-              </div>
-
-            <!-- summary card -->
-            <div class="col mb-4">
-              <div class="card bg-dark text-white">
-                <ul class="list-group list-group-flush">
-
-                  <li class="list-group-item bg-dark text-white">Chapters <span class="badge bg-primary">${content.chapters.count}</span></li>
-                  <li class="list-group-item bg-dark text-white">Poems <span class="badge bg-primary">${content.chapters.total}</span></li>
-
-                </ul>
-              </div>
+            <div each="content.chapters.data" transform="reverse" class="col mb-4">
+                <card-chapter/>
             </div>
 
+          <!-- summary card -->
+          <div class="col mb-4">
+            <div class="card bg-dark text-white">
+              <ul class="list-group list-group-flush">
+
+                <li class="list-group-item bg-dark text-white">Chapters <span class="badge bg-primary">${content.chapters.count}</span></li>
+                <li class="list-group-item bg-dark text-white">Poems <span class="badge bg-primary">${content.chapters.total}</span></li>
+
+              </ul>
+            </div>
           </div>
+
+        </div>
 
 
 
       </slot>
     </main>
 
-    <aside class="d-none d-xl-block col-xl-3">
-      <slot name="aside">
-        <!-- followed by latest entries -->
-        <card-poem each="content.latest" slice="1, 5"></card-poem>
-      </slot>
-    </aside>
+
 
   </div>
 </div>

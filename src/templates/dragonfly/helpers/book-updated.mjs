@@ -6,9 +6,9 @@ function main(context) {
   let response = "";
 
 
-  if (context.latest||context.data) {
+  if ( context && (context.latest||context.data)) {
     const mostRecent = first(context.latest||context.data);
-    if (mostRecent.timestamp) {
+    if (mostRecent && mostRecent.timestamp) {
       response = mostRecent.timestamp;
     }
   }

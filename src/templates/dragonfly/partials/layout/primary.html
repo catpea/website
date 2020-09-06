@@ -5,7 +5,7 @@
       <slot name="main">
         <!-- this is the main listing -->
         <div each="data.books" class="row row-cols-1 row-cols-md-2">
-          <div each="latest" slice="4, 17" class="col mb-4">
+          <div each="feed" slice="4, 17" transform="reverse" class="col mb-4">
             <card-poem></card-poem>
           </div>
           <!-- last entry in the listing is the book it self -->
@@ -25,7 +25,7 @@
           <!-- print the book -->
           <card-book></card-book>
           <!-- followed by three of the latest entries -->
-          <card-poem each="latest" slice="0, 3"></card-poem>
+          <card-poem each="feed" slice="0, 3" transform="reverse"></card-poem>
         </div>
       </slot>
     </aside>

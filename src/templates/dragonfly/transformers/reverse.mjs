@@ -5,6 +5,5 @@ export default main;
 
 function main(list) {
   let response = reverse(clone(list));
-
   return response;
 }

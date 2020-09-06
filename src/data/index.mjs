@@ -3,6 +3,8 @@ import fs from 'fs-extra';
 import path from 'path';
 import take from 'lodash/take.js';
 import reverse from 'lodash/reverse.js';
+import last from 'lodash/last.js';
+import cloneDeep from 'lodash/cloneDeep.js';
 
 import paginate from './paginate.mjs';
 
@@ -24,31 +26,29 @@ const data = {
 
   books:[
 
-    {
-      id:'furkies-purrkies',
-      title: 'Furkies Purrkies',
-      subtitle: 'Anthology of Inspirational Rhyme',
-      category: "Poetry",
-      author: 'Dr. Meow, Ph.D.',
-      cover: 'image/cover-3.jpg',
-
-      url: 'https://catpea.com/furkies-purrkies.html',
-      audio: 'https://www.youtube.com/playlist?list=PLOo-pqnffyOqsK6hf5tFwMqzvhogksrgW',
-
-      //
-      // last: poetryFeed.slice(0,1),
-      // home: poetryFeed.slice(1,14),
-      //
-      // latest: poetryFeed.splice(0,1),
-      // recent: poetryFeed.splice(0,14),
-      // more: poetryFeed.splice(0,14),
-      // rest: poetryFeed,
-
-      feed: fs.readJsonSync('.sources/poetry/dist/feed/feed.json'),
-      latest: fs.readJsonSync('.sources/poetry/dist/feed/feed.json').reverse(),
-      chapters: paginate(fs.readJsonSync('.sources/poetry/dist/feed/feed.json')),
-
-    },
+    // {
+    //   id:'furkies-purrkies',
+    //   title: 'Furkies Purrkies',
+    //   subtitle: 'Anthology of Inspirational Rhyme',
+    //   category: "Poetry",
+    //   author: 'Dr. Meow, Ph.D.',
+    //   cover: 'image/cover-3.jpg',
+    //
+    //   url: 'https://catpea.com/furkies-purrkies.html',
+    //   audio: 'https://www.youtube.com/playlist?list=PLOo-pqnffyOqsK6hf5tFwMqzvhogksrgW',
+    //
+    //   //
+    //   // last: poetryFeed.slice(0,1),
+    //   // home: poetryFeed.slice(1,14),
+    //   //
+    //   // latest: poetryFeed.splice(0,1),
+    //   // recent: poetryFeed.splice(0,14),
+    //   // more: poetryFeed.splice(0,14),
+    //   // rest: poetryFeed,
+    //
+    //
+    //
+    // },
     // {
     //   id:'tractatus',
     //   title: 'Tractatus',
@@ -147,6 +147,12 @@ const data = {
 
 }
 
+function book(data, book, feed){
+  feed = feed.map(o=>({...o, book: book.title}));
+  const chapters = paginate(cloneDeep(feed));
+  data.books.push(Object.assign({updated:last(feed).timestamp}, book, {feed}, {chapters}));
+}
+
 function news(data){
   const newsLocation = path.resolve();
   const news = fs.readFileSync(path.join(__dirname,'news.txt')).toString().split(/\n/).filter(i=>i).filter(i=>!i.match(/^\s*#/)).map(line=>{
@@ -159,6 +165,17 @@ function news(data){
 export default async function () {
 
   news(data);
+
+  book(data, {
+    id:'furkies-purrkies',
+    title: 'Furkies Purrkies',
+    subtitle: 'Anthology of Inspirational Rhyme',
+    category: "Poetry",
+    author: 'Dr. Meow, Ph.D.',
+    cover: 'image/cover-3.jpg',
+    url: 'https://catpea.com/furkies-purrkies.html',
+    audio: 'https://www.youtube.com/playlist?list=PLOo-pqnffyOqsK6hf5tFwMqzvhogksrgW',
+  }, fs.readJsonSync('.sources/poetry/dist/feed/feed.json'));
 
   return data;
 }

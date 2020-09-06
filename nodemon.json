@@ -1,7 +1,7 @@
 {
   "verbose": true,
   "ignore": ["docs"],
-  "ext": "mjs,scss,hbs,css,txt",
+  "ext": "mjs,scss,html,css,txt",
   "exec": "catawampus & cataclysm",
 
   "execMap": {

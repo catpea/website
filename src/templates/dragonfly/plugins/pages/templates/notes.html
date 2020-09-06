@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--NOTE: bug in cheerio prevented use of custom elements in head, template attribute was created to address that. -->
+<head template="head-common"></head>
+<body>
+    <!-- basic bootstrap menu -->
+    <container-navigation>
+    </container-navigation>
+
+
+ 
+
+    <layout-primary>
+        <div slot="main" class="">
+
+
+          <main class="col-xl-9 mb-5">
+
+
+
+              <div each="data.news" class="card bg-dark text-warning mb-3">
+                <div class="card-body">
+                  <h5 class="card-title border-info border-bottom">${title}</h5>
+                  <p class="card-text">${text}</p>
+                  <p class="card-text"><small class="text-muted">${date}</small></p>
+                </div>
+              </div>
+
+
+
+          </main>
+
+
+        </div>
+        <div slot="aside" class="">
+
+        </div>
+    </layout-primary>
+
+    <container-footer>
+    </container-footer>
+
+    <scripts>
+    </scripts>
+
+  </body>
+
+  <template name="card-shadow">
+    <div class="card mb-5">
+      <div class="card-body">
+
+        <slot name="card-title"><h5 class="card-title">Shadow Card - title as element</h5></slot>
+        <p class="card-text">Demonstration of adding shadows to cards.</p>
+        <button class="btn btn-primary">Button</button>
+      </div>
+    </div>
+  </template>
+
+</html>

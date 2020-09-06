@@ -13,10 +13,10 @@ async function main({setup, plugin}){
 
   const templates =
   fs.readdirSync(location, { withFileTypes: true })
-  .filter(dirent => dirent.isFile())
-  .map(dirent=>dirent.name)
-  .filter(filename=>filename.endsWith(extension))
-  .map(i=>path.join(directory, i))
+    .filter(dirent => dirent.isFile())
+    .map(dirent=>dirent.name)
+    .filter(filename=>filename.endsWith(extension))
+    .map(i=>path.join(directory, i))
 
   for( let template of templates){
     response.push({ name: path.basename(template, extension), template, content: {} });

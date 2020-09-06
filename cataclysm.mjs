@@ -22,8 +22,8 @@ const options = {
   // REMOVE THIS IN PRODUCTION
   // REMOVE THIS IN PRODUCTION
   // REMOVE THIS IN PRODUCTION
-  // mode: 'html',
-  // template: 'dragonfly',
+  mode: 'html',
+  template: 'dragonfly',
   // REMOVE THIS IN PRODUCTION
   // REMOVE THIS IN PRODUCTION
   // REMOVE THIS IN PRODUCTION

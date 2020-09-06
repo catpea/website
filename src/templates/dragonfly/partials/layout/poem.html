@@ -14,7 +14,7 @@
     <aside class="d-none d-xl-block col-xl-3">
       <slot name="aside">
         <!-- followed by latest entries -->
-        <card-poem each="parent.latest" slice="0, 5"></card-poem>
+        <card-poem each="parent.feed" slice="0, 5" transform="reverse"></card-poem>
       </slot>
     </aside>
 

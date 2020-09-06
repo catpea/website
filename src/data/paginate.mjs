@@ -75,7 +75,7 @@ export default function main(original, options){
 
     // TODO: create a chain of clickable pages
     // TODO: honor timestamps and introduce concept of OLDER/NEWER pagination
-
+    entry.updated = last(entry.data).timestamp;
 
     return entry;
   })
