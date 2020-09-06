@@ -176,7 +176,7 @@ export default async function () {
     url: 'https://catpea.com/furkies-purrkies.html',
     audio: 'https://www.youtube.com/playlist?list=PLOo-pqnffyOqsK6hf5tFwMqzvhogksrgW',
     description: 'Just another dang old Audio Book about wisdom and growing up. It is not recommended that you read it, or listen to it. But you are challenged to make your own, one that is much better, and much wiser.',
-    more: 'Each day, I receive hundreds of emails asking what a Furkey is. Furkey is defined as a fluffy thought on the subject of a cute creature, often preceding the petting of one. For completion sake, a Purrkey in context of Animal Medicine has to deal with explosive animal flatulence, that requently results in rousing the animal back to higher consiousness. In the context that is used here, however; it means the percolation of wise thoughts on a myriad of subjects.',
+    more: 'Each day, I receive hundreds of emails asking what a Furkey is. Furkey is defined as a fluffy thought on the subject of a cute creature, often preceding the petting of one. For completion sake, a Purrkey in context of Animal Medicine has to deal with explosive animal flatulence, that requently results in rousing the animal to a higher state consiousness. In the context that is used here, however; it means the percolation of wise thoughts on a myriad of subjects.',
 
   }, fs.readJsonSync('.sources/poetry/dist/feed/feed.json'));
 
