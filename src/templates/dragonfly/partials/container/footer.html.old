@@ -2,12 +2,8 @@
   <div class="container-fluid">
     <div class="row shadow">
 
-      <div class="col-4 col-sm-4 col-md-3 col-lg-3 col-xl-2 col-xxl-2 mt-3 p-1">
-        <img src="${options.logo}" class="img-fluid rounded">
-      </div>
-
-      <div class="col-8 col-sm-4 col-md-3 col-lg-3 col-xl-5 col-xxl-3 mt-3">
-        <h3 class="h1 font-weight-bolder"><a href="${options.canonical}" class="text-reset text-decoration-none">${options.title}</a><sup class="smal text-muted">&nbsp;&beta;</sup></h3>
+      <div class="col-12 col-md-6 col-lg-4 mt-3">
+        <h3 class="h1 font-weight-bolder"><a href="${options.canonical}" class="text-reset text-decoration-none">${options.title}</a><sup class="smal text-muted">&beta;</sup></h3>
         <p class="small mb-0">${options.subtitle}</p>
         <p class="small text-muted border-bottom border-primary">${options.description}</p>
 
@@ -24,10 +20,11 @@
         </ul>
       </div>
 
-      <div class="col-12 col-sm-4 col-md-6 col-lg-6 col-xl-5 col-xxl-7 mt-3">
+
+      <div class="col-12 col-md-6 col-lg-8 mt-3">
         <div class="row">
 
-          <div class="col-6 col-sm-12 col-md-12 col-lg-6 text-md-center mb-3">
+          <div class="col-12 col-md-6 text-sm-center mb-3">
             <h2 class="font-weight-bolder">Social</h2>
             <ul class="list-unstyled">
               <!-- <li><a href="author.html" class="text-reset text-decoration-none">Author</a></li> -->
@@ -36,7 +33,7 @@
 
           </div>
 
-          <div class="col-6 col-sm-12 col-md-12 col-lg-6 text-md-center mb-3">
+          <div class="col-12 col-md-6 text-sm-center mb-3">
             <h2 class="font-weight-bolder">Books</h2>
             <ul class="list-unstyled">
               <li each="data.books"><a href="${id}.html" class="text-reset text-decoration-none">${title}</a></li>
@@ -51,9 +48,8 @@
     <!-- second row -->
     <div class="row border-top border-primary py-3 shadow text-center">
       <div class="col">
-
         <a href="notes.html" class="text-reset text-decoration-none" title="top">Notes</a>
-        | <a href="style.html" class="text-reset text-decoration-none" title="top">Style&nbsp;<sup><span class="d-inline d-sm-none">xs</span> <span class="d-none d-sm-inline d-md-none">sm</span> <span class="d-none d-md-inline d-lg-none">md</span> <span class="d-none d-lg-inline d-xl-none">lg</span> <span class="d-none d-xl-inline d-xxl-none">xl</span> <span class="d-none d-xxl-inline">xxl</span><sup></a>
+        | <a href="style.html" class="text-reset text-decoration-none" title="top">Style</a>
       </div>
       <div class="col">
         <a href="#top" class="text-reset text-decoration-none" title="top">Top</a>

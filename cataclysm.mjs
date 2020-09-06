@@ -10,6 +10,7 @@ const options = {
   debug: false,
 
   author: 'Dr. Meow',
+  logo: 'image/logo.jpg',
 
   title: 'Cat Pea Industries',
   subtitle: 'Home of Furkies Purrkies',
