@@ -3,8 +3,18 @@
   <img src="${cover}" class="card-img" style="border-bottom-left-radius:0; border-bottom-right-radius:0;" alt="${title} Illustration">
 
   <div class="card-img-overlay">
-    <h1 class="card-title font-weight-bolder"><a href="${id}.html" class="text-reset text-decoration-none">${title}</a></h1>
-    <h6 class="card-subtitle mb-2"><a href="${id}.html" class="text-reset text-decoration-none">${subtitle}</a></h6>
+
+ 
+
+    <if path="coverDark" is="true">
+      <h1 class="card-title font-weight-bolder"><a href="${id}.html" class="text-reset text-decoration-none">${title}</a></h1>
+      <h6 class="card-subtitle mb-2"><a href="${id}.html" class="text-reset text-decoration-none">${subtitle}</a></h6>
+    </if>
+
+    <if path="coverDark" is="false">
+      <h1 class="card-title font-weight-bolder"><a href="${id}.html" class="text-decoration-none text-dark">${title}</a></h1>
+      <h6 class="card-subtitle mb-2"><a href="${id}.html" class="text-decoration-none text-dark">${subtitle}</a></h6>
+    </if>
 
   </div>
 
@@ -12,10 +22,12 @@
 
 <div class="card bg-dark bg-gr-primary border-primary shadow text-success mb-5" style="border-top-left-radius:0; border-top-right-radius:0;">
    <div class="card-body">
+
     <p class="card-text">${description}</p>
     <p class="card-text text-muted small">${more}</p>
+
     <a if="page.id" not="${id}" href="${id}.html" class="btn btn-outline-warning mb-2">${title} Home</a>
-    <a href="${audio}" class="btn btn-outline-warning mb-2" target="_blank" rel="noopener">Listen to Audio Book</a>
+    <a if="audio" href="${audio}" class="btn btn-outline-warning mb-2" target="_blank" rel="noopener">Listen to Audio Book</a>
   </div>
   <div class="card-footer text-muted small">
     Updated ${updated}

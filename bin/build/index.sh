@@ -2,6 +2,8 @@
 
 bin/stylesheet/index.sh; # this copies into source
 
+rsync -qav --progress .sources/warrior/docs/images/ ./docs/image
+
 rsync -qav --progress .sources/poetry/dist/image ./docs
 rsync -qav --progress .sources/poetry/dist/audio ./docs
 

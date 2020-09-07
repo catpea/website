@@ -149,7 +149,7 @@ const data = {
 
 function book(data, book, feed){
   feed = feed.map(o=>({...o, book: book.title}));
-  const chapters = paginate(cloneDeep(feed));
+  const chapters = paginate(cloneDeep(feed), {perPage: book.chapterSize});
   data.books.push(Object.assign({updated:last(feed).timestamp}, book, {feed}, {chapters}));
 }
 
@@ -176,9 +176,29 @@ export default async function () {
     url: 'https://catpea.com/furkies-purrkies.html',
     audio: 'https://www.youtube.com/playlist?list=PLOo-pqnffyOqsK6hf5tFwMqzvhogksrgW',
     description: 'Just another dang old Audio Book about wisdom and growing up. It is not recommended that you read it, or listen to it. But you are challenged to make your own, one that is much better, and much wiser.',
-    more: 'Each day, I receive hundreds of emails asking what a Furkey is. Furkey is defined as a fluffy thought on the subject of a cute creature, often preceding the petting of one. For completion sake, a Purrkey in context of Animal Medicine has to deal with explosive animal flatulence, that frequently results in rousing the animal to a higher state of consiousness. In the context that is used here, however; it means the percolation of wise thoughts on a myriad of subjects.',
-
+    // more: 'Each day, I receive hundreds of emails asking what a Furkey is. Furkey is defined as a fluffy thought on the subject of a cute creature, often preceding the petting of one. For completion sake, a Purrkey in context of Animal Medicine has to deal with thinking, that frequently results in rousing the creature to a higher state of consiousness. In the context that is used here, however; it means the percolation of wise thoughts on a myriad of subjects.',
+    more: '',
+    chapterSize: 7,
+    format: 'page',
+    coverDark: true,
   }, fs.readJsonSync('.sources/poetry/dist/feed/feed.json'));
+
+  book(data, {
+    id:'westland-warrior',
+    title: 'Westland Warrior',
+    subtitle: 'On Finding A Path To Greatness',
+    category: "Adventure",
+    author: 'Dr. Meow, Ph.D.',
+    cover: 'image/warrior-cover-1.jpg',
+    url: 'https://catpea.com/westland-warrior.html',
+    // audio: 'https://www.youtube.com/playlist?list=PLOo-pqnffyOqsK6hf5tFwMqzvhogksrgW',
+    description: 'A small book about adventures in growing up.',
+    more: '',
+    chapterSize: 1,
+    format: 'chapter',
+    coverDark: false,
+
+  }, fs.readJsonSync('.sources/warrior/dist/feed/feed.json'));
 
   return data;
 }

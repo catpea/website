@@ -3,18 +3,24 @@
 
     <main class="col-xl-9 mb-5">
       <slot name="main">
+
+
         <!-- this is the main listing -->
         <div each="data.books" class="row row-cols-1 row-cols-md-2">
-          <div each="feed" slice="4, 17" transform="reverse" class="col mb-4">
-            <card-poem></card-poem>
-          </div>
-          <!-- last entry in the listing is the book it self -->
-          <div class="col mb-4">
-            <card-book></card-book>
-          </div>
+          
+          <if path="format" is="page">
+            <div each="feed" slice="4, 17" transform="reverse" class="col mb-4">
+              <card-poem></card-poem>
+            </div>
+            <!-- last entry in the listing is the book it self -->
+            <div class="col mb-4">
+              <card-book></card-book>
+            </div>
+          </if>
         </div>
         <!-- a note on bottom of the main listing about more stuff-->
         <alert-more></alert-more>
+
       </slot>
     </main>
 
