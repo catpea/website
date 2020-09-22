@@ -18,6 +18,7 @@ const options = {
   logo: 'image/logo.jpg',
 
   title: 'Cat Pea Industries',
+  //title: 'The world’s leading cat pea platform · Cat Pea Industries',
   subtitle: 'Home of Furkies Purrkies',
   description: 'Various Peas of Fanciful Plumage',
 
