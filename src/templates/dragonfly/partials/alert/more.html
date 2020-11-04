@@ -1,11 +1,12 @@
 <div class="alert alert-success no-print" role="alert">
 
   <div class="small mb-2">
-    The ${options.title} Homepage has only a handful of recent poems, visit their homepage for more.
+    ${options.title} Homepage holds but a handful of my literary flights of fancy.
+    Visit the tables of contents below for a full listing.
   </div>
 
   <ul class="list-unstyled">
-    <li each="data.books"><a href="${id}.html" class="alert-link">${title} Home</a></li>
+    <li each="data.books"><a href="${id}.html" class="alert-link">${title}</a></li>
   </ul>
 
 </div>
