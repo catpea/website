@@ -4,7 +4,7 @@
 
   <div class="card-img-overlay">
 
- 
+
 
     <if path="coverDark" is="true">
       <h1 class="card-title font-weight-bolder"><a href="${id}.html" class="text-reset text-decoration-none">${title}</a></h1>
@@ -27,7 +27,7 @@
     <p class="card-text text-muted small">${more}</p>
 
     <a if="page.id" not="${id}" href="${id}.html" class="btn btn-outline-warning mb-2">${title} Home</a>
-    <a if="audio" href="${audio}" class="btn btn-outline-warning mb-2" target="_blank" rel="noopener">Listen to Audio Book</a>
+    <a if="audio" href="${audio}" class="btn btn-outline-warning mb-2" target="_blank" rel="noopener">Listen on YouTube</a>
   </div>
   <div class="card-footer text-muted small">
     Updated ${updated}
