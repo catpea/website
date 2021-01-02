@@ -2,4 +2,4 @@
 
 bin/synchronize/index.sh
 bin/merge/index.sh
-#bin/publish/index.sh
+bin/publish/index.sh
