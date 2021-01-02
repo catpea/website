@@ -1,3 +1,0 @@
-<!doctype html>
-<html lang="en" source="data.books" file="${id}-toc.html">
-</html>

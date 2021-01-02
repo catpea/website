@@ -1,4 +1,4 @@
 # Website
-catpea.com website
+catpea.com website - just run build-all.sh
 
-run ./menu.mjs to see all the options.
+requres (warrior, poetry), and server with uptodate docs.

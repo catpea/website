@@ -2,6 +2,6 @@
 
 git add .;
 
-git commit -m "Website Update for $(date)";
+git commit -m "Server Object Website Update for $(date)";
 
 git push;
