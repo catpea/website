@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <link media="print" rel="stylesheet" href="/print/gutenberg.css">
+  <link media="print" rel="stylesheet" href="/print/themes/modern.css"> <!-- optional -->
+  <style media="print">
+    /* fixes for the gutenberg.css */
+    body { text-align: initial; }
+    .title-page {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Bird Attacks And Speeding Up Your Workout Music: A Linux Command Line Tutorial</h1>
+
+    <div class="title-page break-after" style="padding-bottom: 5rem;">
+      
+      <img style="display: inline;" src="/image/md-poetry-0487-illustration.jpg" alt="Bird Attacks And Speeding Up Your Workout Music: A Linux Command Line Tutorial" title="Bird Attacks And Speeding Up Your Workout Music: A Linux Command Line Tutorial">
+      
+    </div>
+
+    <div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+      <div class="paragraph" style="font-weight: bold;">Bird Attacks And Speeding Up Your Workout Music: A Linux Command Line Tutorial</div>
+    </div>
+
+    <div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">Upon a tiny bicycle adventure,<br>asking myself how to approach the subject of workout music and linux.</div>
+  <div class="paragraph">While I was contemplating an introduction to linux,<br>and the many steps required along the way...</div>
+  <div class="paragraph"><span>A little bird swooped down and tried to carry me away<sup>[1]</sup></span>,<br>apparently this was exactly what I needed.</div>
+  <div class="paragraph">In the moment I was pedaling on my bicycle,<br>and a little bird was camping on top of my head, hopefully merely attacking.</div>
+  <div class="paragraph">I realized all I need to say about UNIX and Linux in this poem,<br>is that I have been speeding up my workout music, and explain the command I use to do it.</div>
+  <div class="paragraph">As the bird let go, and I started waiving frantically above my head,<br>so that it doesn't come back again.</div>
+  <div class="paragraph">I felt that I should mention that it is probably best to buy a cheap dedicated Linux computer,<br>a <span>Raspberry PI<sup>[2]</sup></span> costs $140 dollars, and a monitor runs about $70.</div>
+  <div class="paragraph">It is not very fast, but web pages load OK,<br>and it is a proper Linux with a proper terminal application where you can type commands.</div>
+  <div class="paragraph">Installing ffmpeg should only require running <code>sudo apt-get install ffmpeg</code><br>Raspberry Pi Documentation has some useful information about <span>APT<sup>[3]</sup></span></div>
+  <div class="paragraph">If the command does not work out, which doesn't really happen,<br>then you have to search for <span>"How to install ffmpeg on Raspberry PI"<sup>[4]</sup></span> and begin your Linux adventure here.</div>
+  <div class="paragraph">But using apt is easy, and you will soon have ffmpeg on your system,<br>you'll have to copy your music onto the PI.</div>
+  <div class="paragraph">And from now on I will refer to your favorite song as: "original-song.mp3",<br>and the song that we will speed up will be called "spedup-song.mp3"</div>
+  <div class="paragraph">There are three parts to this command,<br>and it all begins by saying <code>ffmpeg</code> to tell the system you will be using the ffmpeg program.</div>
+  <div class="paragraph">Then the developers behind ffmpeg decided that you should use -i<br>to tell ffmpeg of any input files so you have to say <code>-i original-song.mp3</code></div>
+  <div class="paragraph">This is called giving a command an argument,<br>we are giving it the -i argument with the value of original-song.mp3.</div>
+  <div class="paragraph">Next, we say <code>-af atempo=1.25</code> so we are giving ffmpeg the -af argument,<br>which is short for audio filter, and then we specify the filter which is atempo.</div>
+  <div class="paragraph"><span>atempo<sup>[5]</sup></span> stands for "Adjust audio tempo" but the syntax that follows -af,<br>is something that ffmpeg programmers picked to try to make things easy.</div>
+  <div class="paragraph">In this case atempo is followed by equal sign,<br>which means assign value, and the value we are assigning is 1.25</div>
+  <div class="paragraph">This is so hard to grasp at first, because ffmpeg programmers,<br>really struggled with how to make all this somewhat readable, and useful.</div>
+  <div class="paragraph">1.25 is a programmers way of saying set the tempo to 125%,<br>the math is easier this way, an everyone just does it.</div>
+  <div class="paragraph">So if you wanted to speed up your song to 150% tempo, you would say, atempo=1.50,<br>and if you wanted to slow it down to 50% tempo, you would say atempo=0.50</div>
+  <div class="paragraph">At this point we just give ffmpeg the filename we want to save the changes to,<br>which in this tutorial is spedup-song.mp3.</div>
+  <div class="paragraph">So the whole command reads like this:<br><code>ffmpeg -i original-song.mp3 -af atempo=1.25 spedup-song.mp3;</code></div>
+  <div class="paragraph">The biggest thing to learn from all this,<br>is that programmers are trying to be useful, and they are very thrifty.</div>
+  <div class="paragraph">The operating system has no idea where or what atempo is,<br>that is just part of ffmpeg, and its own world of complexity.</div>
+  <div class="paragraph">As to the command line,<br><span>the command line is trying to be useful<sup>[6]</sup></span></div>
+  <div class="paragraph">It is just command names and arguments,<br>and developers trying to make commands useful.</div>
+  <div class="paragraph">It is faster to do things on the command line,<br>just imagine how many clicks you would have to make in a Graphic User Interface application.</div>
+  <div class="paragraph">As to not knowing what the commands are,<br>nobody knows them at first, you just write them down, and eventually memorize them.</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <br>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">In Closing,<br>I will speed up one of my songs to let you hear the difference.</div>
+  <div class="paragraph">Here is the original speed,<br>(audio plays)</div>
+  <div class="paragraph">And here is the version, that is sped up to 125% tempo.<br>(audio plays)</div>
+  <div class="paragraph">The overall lesson to take from all this, is that command line is not scary, but it will take a Linux, and some notes to get used to it.<br>and if you are ever bicycling among angry birds, bring an emergency hat.</div>
+</div>
+<div class="break-after">&nbsp;</div>
+<div>
+  <div class="section" style="padding-bottom: 1rem;">References</div>
+  <div>[1]: https://www.youtube.com/watch?v=gWGiWHwmhhc</div>
+  <div>[2]: https://www.canakit.com/raspberry-pi-4-complete-starter-kit.html</div>
+  <div>[3]: https://www.raspberrypi.org/documentation/linux/software/apt.md</div>
+  <div>[4]: https://www.google.com/search?q=How+to+install+ffmpeg+on+Raspberry+PI</div>
+  <div>[5]: https://ffmpeg.org/ffmpeg-filters.html#atempo</div>
+  <div>[6]: https://www.youtube.com/watch?v=tc4ROCJYbm0</div>
+</div>
+
+  </main>
+</body>
+</html>
