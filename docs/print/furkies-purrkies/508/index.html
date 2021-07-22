@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <link media="print" rel="stylesheet" href="/print/gutenberg.css">
+  <link media="print" rel="stylesheet" href="/print/themes/modern.css"> <!-- optional -->
+  <style media="print">
+    /* fixes for the gutenberg.css */
+    body { text-align: initial; }
+    .title-page {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>My First Homemade Portable Music Player</h1>
+
+    <div class="title-page break-after" style="padding-bottom: 5rem;">
+      
+      <img style="display: inline;" src="/image/md-poetry-0508-illustration.jpg" alt="My First Homemade Portable Music Player" title="My First Homemade Portable Music Player">
+      
+    </div>
+
+    <div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+      <div class="paragraph" style="font-weight: bold;">My First Homemade Portable Music Player</div>
+    </div>
+
+    <div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">What I discovered is that sometimes, inventors,<br>just got to shake a leg.</div>
+  <div class="paragraph">Where would I be today,<br>if I didn't switch to Linux in 1998 or so.</div>
+  <div class="paragraph">And what would my invention be today,<br>if I didn't buy my inexpensive little Raspberry Pi Zero W.</div>
+  <div class="paragraph">Today,<br>I made another tiny leap forward.</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <br>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">Instead of continuing my search for a high quality,<br>good review Uninterrupted Power Supply board and safe batteries to go along with it.</div>
+  <div class="paragraph">I simply plugged in my Raspberry Zero Computer into a standard 15,000mAh Energizer power bank,<br>that is used for recharging mobile phones.</div>
+  <div class="paragraph">The Pi immediately started going through the boot process,<br>and by the time I sat down by my desktop I was able to connect to it.</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <br>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">I am also using an <span>external USB SoundBLASTER audio card<sup>[1]</sup></span>,<br>and I had to <span>update my ALSA config<sup>[2]</sup></span> to send the sound through it by setting the card value to "1".</div>
+  <div class="paragraph">I copied today's workout music to it,<br>and then used the <code>cvlc</code> command, which is a very simple command line version of the <span>VLC Media Player<sup>[3]</sup></span>.</div>
+  <div class="paragraph">I just said cvlc *.mp3 which means play all files that end with .mp3,<br>and the moment I hit enter I could hear it playing through my headphones.</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <br>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">This is where things get really weird,<br>because I strapped the Raspberry to my the Power Bank, and then attached it to my bicycle.</div>
+  <div class="paragraph"><img src="/image/poetry-0508-unit.jpg" alt="Photo Of My Player" style="width: 50%;"></div>
+  <div class="paragraph">But here is the thing, there is no keyboard there is no screen.<br>it is just a power-bank that I connected to Raspberry PI, and then to the sound card dongle, and my headphones.</div>
+  <div class="paragraph">It is a fully featured computer with proper Linux,<br>even a Desktop GUI, but all it does is play music through the headphones.</div>
+  <div class="paragraph">Just in case, I put the running cvlc program into the background,<br>and then disowned it, so that when I bicycle away from my WIFI, and lose the login session my music will still be playing.</div>
+  <div class="paragraph">It turned out that was not necessary, after a 10 mile bicycle run,<br>with a long stop to adjust my new wide bicycle seat, drink a bottle of water and snap a photo, (with the unit mounted on my bicycle) it simply reconnected when I got back.</div>
+  <div class="paragraph">And then I had to end the process, using my desktop computer,<br>to stop the music on - what has now become - my Bicycle Linux Server.</div>
+  <div class="paragraph"><img src="/image/poetry-0508-home.jpg" alt="Turning Off Songs" style="width: 50%;"></div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <br>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">I don't have any buttons attached to it,<br>the only way I can control music, is to bicycle home, which is like 15 minutes from the highway.</div>
+  <div class="paragraph">Let me tell you, as much as I love Sid,<br><span>there are only so many times that you can listen to Continental Drift while bicycling<sup>[4]</sup></span>.</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <br>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">So I strapped on a Raspberry Pi onto a huge battery,<br>and then strapped that on to my bicycle, and had a heck of a time.</div>
+  <div class="paragraph">There are so many possibilities now,<br><span>I can connect with my phone to it, and access it using the command line<sup>[5]</sup></span>.</div>
+  <div class="paragraph">Or I can buy a <span>$3 four-key keypad<sup>[6]</sup></span>,<br>and attach it to the battery next to the Pi.</div>
+  <div class="paragraph">And then use the keys as previous, play, pause, next,<br>which would be pretty fun.</div>
+  <div class="paragraph">I can also attach a <span>Mini Wireless Keyboard<sup>[7]</sup></span>,<br><span>and then ponder what to to about the screen<sup>[8]</sup></span>.</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <br>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">None of these little wonderful questions would exist,<br>if I kept trying to find more circuit boards.</div>
+  <div class="paragraph">Plus I really like using a brand name battery bank,<br>as <span>cheap batteries can be dangerous<sup>[9]</sup></span>.</div>
+  <div class="paragraph">From the look of things if I do end up 3D printing an enclosure,<br>it will have to contain the battery bank and the PI, some buttons and a screen.</div>
+  <div class="paragraph">It is neither going to be small,<br>not light.</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <br>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">But,<br>this is 2021.</div>
+  <div class="paragraph">I am not sure,<br>if it is a good idea for any device, not to be a full blown Linux.</div>
+  <div class="paragraph">I don't want to plug wires and USB things in the morning,<br>to copy my workout music onto the gym audio player.</div>
+  <div class="paragraph">That is a ridiculous thing to do,<br>my desktop should automatically shuffle some songs, adjust the tempo to my current routine...</div>
+  <div class="paragraph">...and then connect to my audio player,<br>and get everything prepared for my workout.</div>
+  <div class="paragraph">That is how computers are supposed to work,<br>they are supposed to be networked together, and require minimal interaction.</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <br>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">I know most people would mention the phone here,<br>but phones have bad UI, you can't feel the buttons.</div>
+  <div class="paragraph">At the moment of writing there are only two or three,<br>that have a proper Linux OS.</div>
+  <div class="paragraph">And all the rest of the phones have their OS pretty much closed,<br>they don't want to let people into the operating system.</div>
+  <div class="paragraph">If you can't install your favorite desktop programs on your Phone,<br>then it is not really a computer, it is just a cheap toy, that exposes private information to the internet.</div>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <br>
+</div>
+<div class="section avoid-break-inside" style="padding-bottom: 2rem;">
+  <div class="paragraph">Learning Linux can be easy,<br>and writing command line programs is not very confusing.</div>
+  <div class="paragraph">Graphic User Interfaces require too much clicking,<br>too much context switching, and they can't be connected together.</div>
+  <div class="paragraph">Taking some time to <span>figure out how the command line works<sup>[10]</sup></span>,<br>and then building or splicing a range of custom electronics, is a fantastic experience.</div>
+  <div class="paragraph">It is a very educational experience,<br>that presents great many technological adventures and lessons along the way.</div>
+  <div class="paragraph">The shortest path to knowledge,<br>is taking that little leap forward, and exploring all the interesting things.</div>
+</div>
+<div class="break-after">&nbsp;</div>
+<div>
+  <div class="section" style="padding-bottom: 1rem;">References</div>
+  <div>[1]: https://us.creative.com/p/sound-blaster/sound-blaster-play-3</div>
+  <div>[2]: https://learn.adafruit.com/usb-audio-cards-with-a-raspberry-pi/updating-alsa-config</div>
+  <div>[3]: https://www.youtube.com/watch?v=XHprwDJ0-fU</div>
+  <div>[4]: https://www.youtube.com/watch?v=uMuJxd2Gpxo</div>
+  <div>[5]: https://play.google.com/store/apps/details?id=com.termux&hl=en_US&gl=US</div>
+  <div>[6]: https://www.adafruit.com/product/1332</div>
+  <div>[7]: https://www.amazon.com/Rii-Wireless-Keyboard-Lightweight-Controller/dp/B00I5SW8MC</div>
+  <div>[8]: https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Delectronics&field-keywords=Raspberry+OLED</div>
+  <div>[9]: https://www.youtube.com/watch?v=CUgbmCSmSNY</div>
+  <div>[10]: https://www.youtube.com/watch?v=UW3UxK4Tiqg</div>
+</div>
+
+  </main>
+</body>
+</html>
